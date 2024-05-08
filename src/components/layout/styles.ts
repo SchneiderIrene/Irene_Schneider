@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { hover } from '@testing-library/user-event/dist/hover';
-import { Logo, HeaderBackground } from 'assets';
+import { Logo} from 'assets';
 import { NavLink } from 'react-router-dom';
 
 export const LayotComponent = styled.div`
@@ -8,6 +7,7 @@ export const LayotComponent = styled.div`
   flex-direction: column;
   flex: 1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 `;
 export const Header = styled.header`
   display: flex;
@@ -15,21 +15,26 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 10px;
   gap: 20px;
-  /* background-image: url(${HeaderBackground}); */
   background-color: rgba(0, 0, 0, 0.9);
   background-size: cover;
   color: aliceblue;
-  /* height: 190px; */
+  height: 150px;
+ box-shadow: 0 1px 0 #ff00ff;
 `;
 
 export const LogoNameContainer = styled.div`
   display: flex;
   align-items: center;
+  :hover{
+    transform: scale(1.07);
+  }
 `;
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+
 `;
 export const H1head = styled.h1`
   font-size: 24px;
@@ -50,15 +55,19 @@ export const Main = styled.main`
 export const TelefonNummer = styled.p`
   font-size: 16px;
   color: aliceblue;
+  padding-right: 20px;
 `;
 
 export const Email = styled.a`
   text-decoration: none;
   font-size: 16px;
   color: aliceblue;
+  position: absolute;
+  top: 100px;
+  right: 30px;
 
   :hover{
-color: #FA27B8;}
+    font-size: 17px}
 `;
 
 export const ContactBox = styled.div`
@@ -76,10 +85,9 @@ export const Footer = styled.footer`
   width: 100%;
   padding: 20px;
   color: aliceblue;
-  /* background-image: url(${HeaderBackground});
-  transform: scaleX(-1);
-  background-size: cover; */
+  height: 60px ;
   background-color: rgba(0, 0, 0, 0.9);
+  box-shadow:  0 -1px 0  #ff00ff;
 `;
 
 export const GitHub = styled.a`
@@ -87,7 +95,7 @@ export const GitHub = styled.a`
   font-size: 16px;
   color: aliceblue;
   :hover{
-color: #FA27B8;}
+    font-size: 17px;}
 
 `;
 
@@ -102,8 +110,4 @@ export const StyledNavLink = styled(NavLink)`
   font-size: 20px;
   text-decoration: none;
   color: aliceblue;
-
-  :hover {
-    color: #fa27b8;
-  }
 `;

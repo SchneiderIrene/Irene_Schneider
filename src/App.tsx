@@ -6,8 +6,9 @@ import Home from 'pages/Home/Home';
 import Weiterbildung from 'pages/Weiterbildung/Weiterbildung';
 import BeruflicheErfahrung from 'pages/BeruflicheErfahrung/BeruflicheErfahrung';
 import Studium from 'pages/Studium/Studium';
-import Kenntnisse from 'pages/Kenntnisse/Kenntnisse';
+import Skills from 'pages/Skills/Skills';
 import Interessen from 'pages/Interessen/Interessen';
+import Zertifikate from 'pages/Zertifikate/Zertifikate';
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
       <Route path="/weiterbildung" element={<Weiterbildung/>} />
       <Route path="/beruflicheErfahrung" element={<BeruflicheErfahrung/>} />
       <Route path="/studium" element={<Studium/>} />
-      <Route path="/kenntnisse" element={<Kenntnisse/>} />
+      <Route path="/skills" element={<Skills/>} />
       <Route path="/interessen" element={<Interessen/>} />
+      <Route path="/zertifikate" element={<Zertifikate/>} />
       <Route path="*" element="Seite nicht gefunden" />
       </Routes>
     </Layout>
