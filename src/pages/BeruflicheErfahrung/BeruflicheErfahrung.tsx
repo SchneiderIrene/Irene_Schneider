@@ -1,6 +1,9 @@
+import { BeruflicheErfahrungContainer } from "./styles";
 
 function BeruflicheErfahrung(){
-    return <>Berufliche Erfahrung</>
+    return <BeruflicheErfahrungContainer>
+        
+    </BeruflicheErfahrungContainer>
 }
 
 export default BeruflicheErfahrung;

@@ -1,6 +1,11 @@
+import { WeiterbildungContainer } from "./styles";
 
 function Weiterbildung(){
-    return <>Weiterbildung</>
+    return (
+        <WeiterbildungContainer>
+
+        </WeiterbildungContainer>
+    )
 }
 
 export default Weiterbildung;

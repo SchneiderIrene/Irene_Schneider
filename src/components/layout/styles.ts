@@ -80,12 +80,12 @@ export const ContactBox = styled.div`
 export const Footer = styled.footer`
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
   width: 100%;
   padding: 20px;
   color: aliceblue;
-  height: 60px ;
+  height: 70px ;
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow:  0 -1px 0  #ff00ff;
 `;

@@ -1,38 +1,84 @@
+import { Skills } from 'assets';
 import {
   NavContainer,
   StyledNavLink,
   HomeContainer,
   CardContainer,
+  WeiterbildungImg,
+  FotoBackground,
   FotoContainer,
-  FotoImg,
+  InfoBlock,
+  Title,
+  JobTitle,
+  Adresse,
+  Tel,
+  Email,
+  StudiumgImg,
+  JobImg,
+  SkillsImg,
+  InteressenImg,
+  ZertifikateImg
 } from './styles';
 
 function Home() {
   return (
     <HomeContainer>
       <CardContainer>
-        <NavContainer>
-          <StyledNavLink to="/weiterbildung">Weiterbildung</StyledNavLink>
-        </NavContainer>
-        <NavContainer>
+        {/* <WeiterbildungImg> */}
+          <NavContainer>
+            <StyledNavLink to="/weiterbildung">Weiterbildung</StyledNavLink>
+          </NavContainer>
+        {/* </WeiterbildungImg> */}
+        {/* <JobImg> */}
+          <NavContainer>
           <StyledNavLink to="/beruflicheErfahrung">
             Berufliche Erfahrung
           </StyledNavLink>
         </NavContainer>
-        <NavContainer>
+        {/* </JobImg> */}
+        
+{/* <InteressenImg> */}
+  <NavContainer>
           <StyledNavLink to="/interessen">Interessen</StyledNavLink>
         </NavContainer>
-        <NavContainer>
+{/* </InteressenImg> */}
+        
+        
+{/* <StudiumgImg> */}
+   <NavContainer>
           <StyledNavLink to="/studium">Studium</StyledNavLink>
         </NavContainer>
-        <NavContainer>
+{/* </StudiumgImg> */}
+       
+{/* <SkillsImg> */}
+  <NavContainer>
           <StyledNavLink to="/skills">Hard Skills & Soft Skills</StyledNavLink>
         </NavContainer>
-        <NavContainer>
+{/* </SkillsImg> */}
+   
+
+  
+
+       
+{/* <ZertifikateImg> */}
+  <NavContainer>
           <StyledNavLink to="/zertifikate">Zertifikate</StyledNavLink>
         </NavContainer>
+{/* </ZertifikateImg> */}
+        
       </CardContainer>
-     <FotoImg />
+
+      <FotoContainer>
+      <FotoBackground/>  
+      {/* <InfoBlock>
+        <Title>Irene Schneider</Title>
+        <JobTitle>Softwareentwickler</JobTitle>
+        <Adresse>Straubing Bayern Deutschland</Adresse>
+        <Tel>+49 179 211 86 77</Tel>
+        <Email>schneider_irene@outlook.com</Email>
+      </InfoBlock> */}
+      </FotoContainer>
+      
     </HomeContainer>
   );
 }
