@@ -6,13 +6,18 @@ interface ButtonComponentStylesProps{
 
 export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
     width: 100%;
-    height: 70px;
+    height: 5.2vw;
     outline: none;
-    border: none;
-    border-radius: 4px;
-    padding: 20px;
-    background-color:${({disabled}) => disabled ? '#CEDBF4' : '#1f27f5' } ;
-    color: white;
-    font-size: 16px;
+    border: 0.3vw solid #800080;
+    padding: 1vw;
+    background-color:rgba(128, 0, 128, 0);
+    color: #FCF1E4;
+    font-size: 1.4vw;
+    font-weight: bold;
     cursor: pointer;
+    :hover {
+    transform: scale(1.1);
+  }
+  
+
 ` 

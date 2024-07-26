@@ -1,9 +1,8 @@
-import { create } from "domain"
+
 import { createAppSlice } from "store/createAppSlice"
 import { WeatherSliceState } from "./types"
-import { PayloadAction, isRejectedWithValue } from "@reduxjs/toolkit"
+import { PayloadAction} from "@reduxjs/toolkit"
 import { v4 } from "uuid";
-import { error } from "console";
 
 const weatherInitionalState: WeatherSliceState = {
   data: [],
