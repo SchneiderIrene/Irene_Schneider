@@ -24,5 +24,6 @@ export {default as Udemy} from './Java сертификат2_page-0001.jpg'
 export {default as Java1} from './Java1.jpg'
 export {default as Spring} from './Spring.jpg'
 export {default as SQL} from './SQL.jpg'
+export {default as Skip} from './next-arrows-svgrepo-com.svg'
 
 

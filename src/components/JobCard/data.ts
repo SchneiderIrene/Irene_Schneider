@@ -132,6 +132,60 @@ const jobsData: Job[] = [
       },
     ],
   },
+  {
+    title: "индекс2",
+    company: "",
+    companyDescription: "",
+    link: "",
+    period: "",
+    location: "",
+    description: [
+      {
+        titleDescription:
+          "",
+        span: [
+            "", 
+            "",
+            "",
+            ""
+        ],
+        li: [
+            "",
+            "",
+            "",
+            ""
+        ]
+,     
+      },
+    ],
+  },
+  {
+    title: "индекс3",
+    company: "",
+    companyDescription: "",
+    link: "",
+    period: "",
+    location: "",
+    description: [
+      {
+        titleDescription:
+          "",
+        span: [
+            "", 
+            "",
+            "",
+            ""
+        ],
+        li: [
+            "",
+            "",
+            "",
+            ""
+        ]
+,     
+      },
+    ],
+  },
 ]
 
 export default jobsData

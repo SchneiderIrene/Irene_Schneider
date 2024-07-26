@@ -1,5 +1,13 @@
 import styled from "@emotion/styled"
 
+export const JobCardWrapper = styled.div`
+position: relative;
+gap: 1vw;
+display: flex;
+flex-direction: column;
+flex: 1;
+`
+
 export const CardComponent = styled.div`
   width: 100%;
   display: flex;
@@ -67,4 +75,40 @@ display: flex;
 flex-direction: column;
 gap: 0.2vw;
 margin-bottom: 1.66vw;
+`
+
+interface ButtonControlProps{
+  position?: boolean
+}
+
+export const ButtonControl = styled.div<ButtonControlProps>`
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.3vw;
+position: absolute;
+top: ${({position})=> position ? "-4vw" : "none"};
+bottom: ${({position})=> position ? "none" : "-4vw"};
+width: 100%;
+z-index: 9;
+`
+interface IconProps {
+  disabled: boolean
+  scaleX?: boolean
+}
+export const IconBox = styled.img<IconProps>`
+width: 3vw;
+height: 2.5vw;
+padding: 0.5vw;
+opacity: ${({disabled})=>disabled ? "0.4" : "1"};
+cursor: ${({disabled})=>disabled ? "auto" : "pointer"};
+transform: ${({scaleX})=>scaleX ? "scaleX(-1)" : "scaleX(1)"}; 
+:hover {
+       transform: ${({disabled, scaleX})=>
+      disabled 
+       ? (scaleX ? 'scaleX(-1)' : 'scaleX(1)') 
+       : (scaleX ? 'scaleX(-1) scale(1.3)' : 'scale(1.3)')
+      }
+     
+  }
 `

@@ -1,4 +1,4 @@
-import { CardContainer, ExperienceContainer, Title } from "./styles"
+import {  CardContainer, ExperienceContainer, Title } from "./styles"
 import Rectangle from "components/Rectangle/Rectangle"
 import Elipce from "components/Elipce/Elipse"
 import JobCard from "components/JobCard/JobCard";
