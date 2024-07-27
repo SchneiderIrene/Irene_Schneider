@@ -4,6 +4,8 @@ export const CertificateContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5.2vw;
+  flex: 1;
+  position: relative;
 `
 export const Title = styled.h1`
   font-size: 3.75vw;
@@ -59,7 +61,6 @@ export const ModalContainer = styled.div`
 export const Img = styled.img`
   position: relative;
   top: 158%;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;
 `

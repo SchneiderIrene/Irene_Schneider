@@ -5,7 +5,7 @@ import { Elipce } from "assets";
 
 export const ContainerEclipse = styled.div`
   position: absolute;
-  right:-15vw;
+  right:-14vw;
   bottom: -15vw;
   z-index: 1;
   width: 50vw;
