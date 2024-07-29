@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { FaWhatsapp } from "react-icons/fa";
 import {
   LayoutComponent,
   Header,
@@ -20,6 +21,7 @@ import {
   IconXing,
   AStyled,
   IconContainerTransform,
+  WhatsappContainer,
 
 } from './styles';
 import { LayotProps } from './types';
@@ -87,6 +89,11 @@ const navigate = useNavigate()
         </IconContainerTransform>
       </ContactContainer>
       <ContactContainer>
+        <WhatsappContainer>
+          <AStyled href='https://wa.me/491792118677' target='_blank'>
+            <FaWhatsapp color="rgba(252, 241, 228, 0.9)" fontSize={"1.7vw"}/>
+          </AStyled>
+        </WhatsappContainer>
        <AStyled href='https://www.linkedin.com/in/irene-schneider-96853a274' target='_blank'>
         <IconLinkedin/>
        </AStyled> 

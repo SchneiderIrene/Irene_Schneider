@@ -161,3 +161,9 @@ export const AStyled = styled.a`
   font-size: 0.5vw;
   position: relative;
 `
+
+export const WhatsappContainer = styled.div`
+  :hover {
+    transform: scale(1.2);
+  }
+`
