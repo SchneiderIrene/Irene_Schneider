@@ -10,6 +10,7 @@ gap: 5.2vw;
 width: 100%;
 position: relative;
 z-index: 7;
+height: 100%;
 `
 export const Title = styled.h1`
 font-size: 3.75vw;

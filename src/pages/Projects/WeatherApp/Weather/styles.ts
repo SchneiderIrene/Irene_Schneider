@@ -7,7 +7,7 @@ export const WeatherPagesWrapper = styled.div`
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  min-height: 26.04vw;
+  height: 26.04vw;
   padding: 2.6vw;
   gap: 1.04vw;
   position: relative;

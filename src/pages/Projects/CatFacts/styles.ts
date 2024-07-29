@@ -10,6 +10,7 @@ padding: 2.6vw;
 flex: 1;
 background-image: url(${CatFactsBackground});
 background-size: cover;
+background-position: center;
 `
 interface ButtonStylesProps {
     disabled?: boolean
