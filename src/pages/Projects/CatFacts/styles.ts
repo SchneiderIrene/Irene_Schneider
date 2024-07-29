@@ -12,7 +12,7 @@ background-image: url(${CatFactsBackground});
 background-size: cover;
 `
 interface ButtonStylesProps {
-    disabled: boolean
+    disabled?: boolean
   }
 export const ButtonCat = styled.button<ButtonStylesProps>`
     width: 100%;
