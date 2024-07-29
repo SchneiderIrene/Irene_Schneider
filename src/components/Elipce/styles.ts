@@ -16,6 +16,6 @@ export const ContainerEclipse = styled.div`
 
 export const ElipceComponent = styled.img`
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   `
   ElipceComponent.defaultProps = { src: Elipce }
