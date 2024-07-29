@@ -13,6 +13,7 @@ export const WeatherPagesWrapper = styled.div`
   position: relative;
   border-radius: 0.625vw;
   background-image: url(${Background});
+  background-size: 100%;
 `
 
 export const DeleteButtonWeather = styled.button`

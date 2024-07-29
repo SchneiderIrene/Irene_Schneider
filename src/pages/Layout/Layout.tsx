@@ -79,7 +79,9 @@ const navigate = useNavigate()
         <IconContainerTransform>
             <IconDownload/>
             <IconText>
-              <AStyled href=''>Lebenslauf herunterladen</AStyled> 
+              <AStyled 
+              href='../../../public/Irene Schneider LL.pdf'
+              download="Irene_Schneider_Lebenslauf">Lebenslauf herunterladen</AStyled> 
             </IconText>
         </IconContainerTransform>
       </ContactContainer>

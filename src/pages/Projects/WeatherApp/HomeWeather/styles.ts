@@ -14,6 +14,7 @@ export const WeatherMainWrapper = styled.div`
   min-height: 26vw;
   border-radius: 0.625vw;
   background-image: url(${Background});
+  background-size: 100%;
 `
 
 export const WeatherSearchWrapper = styled.div`

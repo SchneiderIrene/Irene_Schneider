@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import ReactTooltip from 'react-tooltip';
 
 export const JobCardWrapper = styled.div`
 position: relative;
@@ -111,4 +112,14 @@ transform: ${({scaleX})=>scaleX ? "scaleX(-1)" : "scaleX(1)"};
       }
      
   }
+`
+
+export const ButtonStart = styled.div`
+display: flex;
+gap: 0.2vw;
+cursor: pointer;
+:hover{
+  transform: scale(1.3);
+}
+
 `
