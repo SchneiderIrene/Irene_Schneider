@@ -81,7 +81,7 @@ const navigate = useNavigate()
             <IconText>
               <AStyled 
               //href='../../../public/Irene Schneider LL.pdf'
-              href='/files/Irene Schneider LL.pdf'
+              href='/Irene Schneider LL.pdf'
               download="Irene_Schneider_Lebenslauf">Lebenslauf herunterladen</AStyled> 
             </IconText>
         </IconContainerTransform>
