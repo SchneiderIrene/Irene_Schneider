@@ -83,6 +83,7 @@ export const ContactContainer = styled.div`
   display: flex;
   gap: 4.1vw;
   justify-content: space-around;
+  align-items: center;
 `
 
 export const IconContainer = styled.div`
@@ -163,6 +164,9 @@ export const AStyled = styled.a`
 `
 
 export const WhatsappContainer = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
   :hover {
     transform: scale(1.2);
   }
