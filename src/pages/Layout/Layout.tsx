@@ -25,10 +25,15 @@ import {
 
 } from './styles';
 import { LayotProps } from './types';
+import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 
 function Layout({ children }: LayotProps) {
 const navigate = useNavigate()
+
+const {t} = useTranslation();
+
 
   return (
     <LayoutComponent>
@@ -41,22 +46,22 @@ const navigate = useNavigate()
               textDecoration: isActive ? "underline" : "none"
             })}
             to={'/experience'}>
-             Erfahrung
+             {t("header.experience")}
       </StyledNavLink>
       <StyledNavLink style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none"
             })} 
             to={'/studies'}>
-             Studium
+             {t("header.studies")}
       </StyledNavLink>
       <StyledNavLink style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none"
             })}
             to={'/certificates'}>
-             Zertifikate
+              {t("header.certificates")}
       </StyledNavLink>
-        
       </NavContainer>
+      <LanguageSwitcher/>
       </Header>
       <Main>{children}</Main>
       <Footer>

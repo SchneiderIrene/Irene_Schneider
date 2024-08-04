@@ -7,9 +7,11 @@ import Projects from "pages/Projects/Projects"
 import HomeWeather from "pages/Projects/WeatherApp/HomeWeather/HomeWeather"
 import Weather from "pages/Projects/WeatherApp/Weather/Weather"
 import Studies from "pages/Studies/Studies"
+import { useTranslation } from "react-i18next";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <Layout>

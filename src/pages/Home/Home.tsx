@@ -2,17 +2,24 @@ import Button from "components/Button/Button";
 import { ArticleText, ArticleTextService, Block, BlockContainer, ButtonControl, ContainerEclipse, DescriptionBlock, ElipceComponent, FotoArticle,  HeroArticle, HeroSection, HomeContainer, Linie, NummerBlock, ServiseSection, TextHeroSection, TextServiceSection, TitleBlock, TitleHeroSection, TitleServiceSection } from "./styles";
 import { useNavigate } from "react-router-dom";
 import Elipce from "components/Elipce/Elipse";
+import { useTranslation } from "react-i18next";
 
 function Home(){
     const navigate = useNavigate()
+
+    const {t, i18n} = useTranslation();
+    console.log(i18n.language);
+    
+
+    
     return (
         <HomeContainer>
             <HeroSection>
                 <HeroArticle>
                 <ArticleText>
-                <TextHeroSection> Hallo, ich bin</TextHeroSection>
-                <TitleHeroSection>Irene Schneider</TitleHeroSection>
-                <TextHeroSection>eine erfahrene <span style={ {fontWeight : "bold"}}>Frontend-Entwicklerin</span>, spezialisiert auf React, Redux und moderne Webtechnologien. Ich entwickele benutzerfreundliche, skalierbare  Anwendungen.</TextHeroSection>
+                <TextHeroSection>{t("home.hello")}</TextHeroSection>
+                <TitleHeroSection>{t("home.name")}</TitleHeroSection>
+                <TextHeroSection>{t("home.promising")} <span style={ {fontWeight : "bold"}}>Frontend-{t("home.span")}</span>, {t("home.specialized")}</TextHeroSection>
                 </ArticleText>
                 <ButtonControl>
                     <Button name="Projekten" onButtonClick={()=>{navigate("/projects")}}/>

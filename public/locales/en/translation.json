@@ -1,0 +1,15 @@
+{
+    "header": {
+        "experience" : "Experience",
+        "studies" : "Studies",
+        "certificates" : "Certificates"
+    },
+    "home": {
+            "hello": "Hello, I am",
+            "name": "Irene Schneider",
+            "promising": "a promising",
+            "span": "developer",
+            "specialized": "specialized in React, Redux, and modern web technologies. I develop user-friendly, scalable applications."
+        }
+    
+}
