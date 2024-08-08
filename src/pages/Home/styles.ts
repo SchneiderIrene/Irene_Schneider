@@ -35,7 +35,7 @@ color: #FCF1E4;
 line-height: 1.5;
 `
 export const TitleHeroSection = styled.h1`
-font-size: 3.75vw;
+font-size: 3.56vw;
 font-weight: bold;
 text-shadow: 2px 2px 0px rgba(252, 241, 228, 0.1), -2px -2px 0px rgba(252, 241, 228, 0.1);
 color: #FCF1E4;

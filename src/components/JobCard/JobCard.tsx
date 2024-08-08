@@ -1,6 +1,6 @@
 import { GoDotFill } from "react-icons/go";
-import { useState } from "react";
-import { RiRestartLine } from "react-icons/ri";
+import { useEffect, useState } from "react";
+import { VscDebugStepBack } from "react-icons/vsc";
 import {
   ButtonControl,
   ButtonStart,
@@ -17,8 +17,10 @@ import {
   TitleH3Card,
   TitleH4Card,
 } from "./styles"
-import { JobProps } from "./types"
+import { JobDescription, JobProps } from "./types"
 import { Skip } from "assets"
+import { useTranslation } from "react-i18next";
+import i18n from "i18n";
 
 function JobCard({ jobs }: JobProps) {
   const [index, setIndex] = useState(0)
@@ -39,6 +41,17 @@ function JobCard({ jobs }: JobProps) {
     setIndex(0)
   }
 
+  const {t} = useTranslation();
+
+  const descriptions =  t(`jobs.${index}.description`, { returnObjects: true }) as JobDescription[];
+
+  descriptions.map((desc) => ({
+    titleDescription: desc.titleDescription ? t(desc.titleDescription) : '',
+    spans: desc.span ? desc.span.map(span => t(span)) : [],
+    listItems: desc.li ? desc.li.map(liItem => t(liItem)) : []
+  }));
+  
+
   return (
     <JobCardWrapper>
       <ButtonControl position>
@@ -49,7 +62,7 @@ function JobCard({ jobs }: JobProps) {
           scaleX
         />
         <ButtonStart 
-        title="zum Anfang" 
+        title="start" 
         onClick={handleReset}>
           <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
           <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
@@ -65,28 +78,28 @@ function JobCard({ jobs }: JobProps) {
       </ButtonControl>
       <CardComponent>
         <TitleH2Card>
-          {jobs[index].title} &nbsp;
-          <StyledA href={jobs[index].link} target="_blank">
+          {t(`jobs.${index}.title`)} &nbsp;
+          <StyledA href={t(`jobs.${index}.link`)} target="_blank">
             {" "}
-            {jobs[index].company}
+            {t(`jobs.${index}.company`)}
           </StyledA>{" "}
-          &nbsp; {jobs[index].companyDescription}, &nbsp;{jobs[index].location}
+          &nbsp; {t(`jobs.${index}.companyDescription`)}, {t(`jobs.${index}.location`)}
         </TitleH2Card>
-        <TitleH3Card>{jobs[index].period}</TitleH3Card>
-        <TitleH4Card>Hauptverantwortlichkeiten:</TitleH4Card>
+        <TitleH3Card>{t(`jobs.${index}.period`)}</TitleH3Card>
+        <TitleH4Card>{t(`jobs.${index}.responsibilities`)}</TitleH4Card>
         <DescriptionExperience>
-          {jobs[index].description.map((desc, i) => (
+          {descriptions.map((desc, i) => (
             <Part key={i}>
               {desc.titleDescription && (
-                <TitleDesc>{desc.titleDescription}</TitleDesc>
+                <TitleDesc>{t(desc.titleDescription)}</TitleDesc>
               )}
               {desc.li &&
                 desc.li.map((liItem, k) => (
                   <StyledLi key={k}>
                     {desc.span && desc.span[k] && (
-                      <StyledSpan>{desc.span[k]} &nbsp;</StyledSpan>
-                    )}
-                    {liItem}
+                    <StyledSpan>{desc.span[k]} &nbsp;</StyledSpan>
+                  )}
+                  {liItem}
                   </StyledLi>
                 ))}
             </Part>

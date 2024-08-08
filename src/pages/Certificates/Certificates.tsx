@@ -11,6 +11,7 @@ import { useState } from "react";
 import Modal from "components/Modal/Modal";
 import Elipce from "components/Elipce/Elipse";
 import Rectangle from "components/Rectangle/Rectangle";
+import { useTranslation } from "react-i18next";
 
 
 function Certificates() {
@@ -33,12 +34,14 @@ function Certificates() {
 }
 
   const handleCloseModalWithChildren = () => setIsModalOpenWithChildren(false)
+  
+  const {t} = useTranslation();
 
   return (
     <CertificateContainer>
        <Elipce/>
        <Rectangle/>
-      <Title>Meine Zertifikate</Title>
+      <Title>{t("certificates.certificates_title")}</Title>
       <CardContainer>
             <Card
           style={{ backgroundImage: `url(${Diplom})` }}

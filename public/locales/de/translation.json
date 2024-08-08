@@ -1,0 +1,472 @@
+{
+  "header": {
+    "experience": "Erfahrung",
+    "studies": "Studium",
+    "certificates": "Zertifikate"
+  },
+  "home": {
+    "hello": "Hallo, ich bin",
+    "name": "Irene Schneider",
+    "promising": "eine aussichtsreiche",
+    "span": "Entwicklerin",
+    "specialized": "spezialisiert auf React, Redux und moderne Webtechnologien. Ich entwickele benutzerfreundliche, skalierbare  Anwendungen.",
+    "project_Button": "Projekten",
+    "what_can_i_do": "Was kann ich tun",
+    "all_kinds": "Alle Arten von Webanwendungen für unterschiedliche Anforderungen Personalisierte Lösungen und individuelle Herangehensweisen für jedes Projektteam.",
+    "block1_title": "Entwicklung und nahtlose Backend-Integration",
+    "block1_discreption": "Nutzen Sie meine Expertise in JavaScript, TypeScript, React, Redux, HTML5, CSS und Tailwind für die Entwicklung dynamischer und benutzerfreundlicher Webanwendungen. Implementierung nahtloser Interaktionen zwischen Frontend und Backend mittels API und Node.js für eine optimale Benutzererfahrung.",
+    "block2_title": "Design und",
+    "br": "Prototyping",
+    "block2_discreption": "Erstellen Sie ansprechende Benutzeroberflächen mit modernen Tools wie Figma. Sicherstellung eines responsiven Designs durch Media-Queries, um eine optimale Darstellung auf verschiedenen Geräten zu gewährleisten.",
+    "block3_title": "Entwicklung und Testing",
+    "block3_discreption": "Entwicklung robuster Backend-Lösungen mit Java und dem Spring Framework (Spring Boot, MVC, Security, Data JPA). Effiziente Verwaltung von Abhängigkeiten mit Maven und Deployment von Anwendungen auf Tomcat. Umfassendes Testing mit JUnit5 und Postman sowie strukturierte Versionskontrolle mit Git und GitHub."
+  },
+  "footer": {
+    "country": "Deutschland",
+    "city": "Straubing",
+    "download": "Lebenslauf herunterladen",
+    "data": "Juni 2024"
+  },
+  "studies": {
+    "studies_title": "Studium & Weiterbildung",
+    "institut": "Juristische Institut SLI of the FPS of Russia",
+    "country_city1": "Russland Samara",
+    "description_studies1": "Diplom mit Auszeichnung in Rechtswissenschaft",
+    "description_ait-tr": "Schule",
+    "country_city2": "Deutschland Berlin",
+    "description_studies2": "Fullstack-Entwickler mit Schwerpunkt in Frontend-Entwicklung"
+  },
+  "certificates": {
+    "certificates_title": "Meine Zertifikate"
+  },
+  "experience": {
+    "experience_title": "Berufliche Erfahrung"
+  },
+  "jobs": [
+    {
+      "title": "Front-End Softwareentwickler",
+      "company": "LeafGrow ",
+      "companyDescription": "Startup",
+      "link": "https://leafgrow-app-foign.ondigitalocean.app/#/",
+      "period": "April 2024 – bis heute",
+      "location": "Deutschland",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Entwurf und Implementierung der Frontend-Architektur mit React für skalierbare und wartbare Anwendungen.",
+          "span": [
+            "Entwurf der Architektur:",
+            "Implementierung:",
+            "Skalierbarkeit:",
+            "Wartbarkeit:"
+          ],
+          "li": [
+            "Umfasst die Planung und Erstellung der Struktur einer Anwendung. Dies beinhaltet die Auswahl geeigneter Designmuster, modulare Entwicklung und Sicherstellung der Trennung von Verantwortlichkeiten.",
+            "Umsetzung der architektonischen Entscheidungen mit React. Dies beinhaltet das Erstellen von Komponenten, die Konfiguration des Routings (mit React Router), das Erstellen des globalen Zustands und die Verwaltung des Lebenszyklus der Komponenten.",
+            "Sicherstellen, dass die Anwendung problemlos erweitert werden kann und größere Daten- und Benutzerzahlen verarbeiten kann, ohne an Leistung zu verlieren.",
+            "Gewährleistung, dass der Code leicht zu warten und zu aktualisieren ist. Dazu gehört das Schreiben von sauberem und gut dokumentiertem Code, die Verwendung modularer und wiederverwendbarer Komponenten sowie die Implementierung von Tests."
+          ]
+        },
+        {
+          "titleDescription": "State-Management mit Redux zur Sicherstellung einer konsistenten Zustandsverwaltung",
+          "span": ["State-Management: ", "Redux: ", "Konsistenz: "],
+          "li": [
+            "Verwaltung des Zustands der Anwendung, um sicherzustellen, dass die Daten konsistent sind und in allen Komponenten korrekt dargestellt werden.",
+            "Nutzung der Redux-Bibliothek zur zentralisierten Verwaltung des Zustands. Dies beinhaltet das Erstellen von Actions, Reducern und Store.",
+            "Sicherstellen, dass der Zustand der Anwendung einheitlich und leicht nachverfolgbar ist. Dies ist wichtig für die Fehlersuche und das vorhersehbare Verhalten der Anwendung."
+          ]
+        },
+        {
+          "titleDescription": "Nahtlose Integration von Frontend und Backend mittels API und Node.js",
+          "span": ["Integration:  ", "API: ", "Node.js: "],
+          "li": [
+            "Konfiguration der Interaktion zwischen der Client-Seite (Frontend) und der Server-Seite (Backend) über eine API.",
+            "Erstellung und Nutzung einer API zum Datenaustausch zwischen Frontend und Backend. Dies kann RESTful API oder GraphQL umfassen.",
+            "Verwendung von Node.js zur Erstellung der Serverlogik. Dies kann die Konfiguration des Servers, das Routing von Anfragen und die Verwaltung der Datenbank umfassen."
+          ]
+        },
+        {
+          "titleDescription": "Effiziente Handhabung von API-Anfragen und Fehlerbehebung",
+          "span": ["API-Anfragen:  ", "Fehlerbehebung: "],
+          "li": [
+            "Erstellung und Ausführung von HTTP-Anfragen an die API. Dies beinhaltet die Nutzung von Bibliotheken wie Axios oder Fetch.",
+            "Umgang mit Fehlern bei der Ausführung von API-Anfragen. Dies kann die Einrichtung globaler Fehlerbehandler, die Verwendung von try-catch-Blöcken und die Bereitstellung verständlicher Fehlermeldungen für Benutzer umfassen."
+          ]
+        },
+        {
+          "titleDescription": "Entwicklung intuitiver Benutzeroberflächenkomponenten und interaktiver Features",
+          "span": [
+            "Benutzeroberflächenkomponenten:  ",
+            "Interaktive Features: "
+          ],
+          "li": [
+            "Erstellung von Benutzeroberflächen (UI) mit React-Komponenten. Dies umfasst die Erstellung von Formularen, Buttons, Modalen und anderen UI-Elementen.",
+            "Entwicklung interaktiver Elemente wie Animationen, Übergänge und interaktive Karten, um das Benutzererlebnis zu verbessern."
+          ]
+        },
+        {
+          "titleDescription": "Implementierung sicherer Funktionen für Benutzerregistrierung und -authentifizierung",
+          "span": ["Benutzerregistrierung:  ", "Authentifizierung: "],
+          "li": [
+            "Erstellung eines Systems zur Benutzerregistrierung. Dies umfasst die Validierung von Formularen, das Senden von Daten an den Server und die Bearbeitung der Antworten.",
+            "Einrichtung von Benutzerauthentifizierungssystemen. Dies kann die Nutzung von JWT (JSON Web Tokens), OAuth oder anderen Methoden umfassen."
+          ]
+        },
+        {
+          "titleDescription": "Verwaltung und Aktualisierung von Benutzerprofilen",
+          "span": ["Benutzerprofile:  ", "Aktualisierung: "],
+          "li": [
+            "Erstellung und Verwaltung von Benutzerprofilen. Dies umfasst die Anzeige von Benutzerinformationen, die Möglichkeit zur Bearbeitung des Profils und das Hochladen von Avataren.",
+            "Sicherstellen, dass Benutzer ihre Informationen aktualisieren und diese Daten auf dem Server speichern können."
+          ]
+        },
+        {
+          "titleDescription": "Personalisierung von Inhalten basierend auf Benutzerpräferenzen",
+          "span": ["Personalisierung:  ", "Benutzerpräferenzen: "],
+          "li": [
+            "Anpassung der angezeigten Inhalte basierend auf den Präferenzen des Benutzers. Dies kann Empfehlungen, personalisierte Newsfeeds und Interface-Einstellungen umfassen.",
+            "Speichern und Nutzen der Benutzerpräferenzen, um die Interaktion mit der Anwendung zu verbessern."
+          ]
+        },
+        {
+          "titleDescription": "Arbeit in einem hochkooperativen Teamumfeld und Hervorragend abgestimmte Teamarbeit",
+          "span": [
+            "Teamumfeld:  ",
+            "Kooperation: ",
+            "Effektive Zusammenarbeit:",
+            "Erfolg des Projekts:"
+          ],
+          "li": [
+            "Zusammenarbeit mit Entwicklern, Designern und Projektmanagern.",
+            "Nutzung von Versionskontrollsystemen (z.B. Git), Teilnahme an Teammeetings und Diskussionen.",
+            "Wissens- und Erfahrungsaustausch, gemeinsames Lösen von Problemen.",
+            "Beitrag zum erfolgreichen Abschluss, Einhaltung von Terminen und Erreichung der Ziele."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fullstack Softwareentwickler Student",
+      "company": "AIT-TR",
+      "companyDescription": "GmbH",
+      "link": "https://www.ait-tr.de/de",
+      "period": "November 2023 – Juni 2024",
+      "location": "Deutschland, Berlin",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Entwickeln dynamischer Anwendungen mit JavaScript, TypeScript und React",
+          "span": [
+            "Verwendung moderner JavaScript-Technologien:",
+            "Effiziente und responsive Benutzeroberflächen: ",
+            "State Management mit Redux:",
+            "Styling mit Tailwind CSS: ",
+            "Markup mit HTML5 und CSS:"
+          ],
+          "li": [
+            "Entwicklung von Anwendungen unter Verwendung von JavaScript und TypeScript, um eine starke Typisierung und verbesserte Wartbarkeit zu gewährleisten.",
+            "Aufbau von Benutzeroberflächen mit React, die sowohl reaktionsschnell als auch effizient sind.",
+            "Implementierung von Redux für ein robustes State-Management in komplexen Anwendungen.",
+            "Einsatz von Tailwind CSS für die schnelle und effiziente Erstellung von modernen und ansprechenden UI-Designs.",
+            "Nutzung von HTML5 und CSS für die Strukturierung und Gestaltung von Webseiten."
+          ]
+        },
+        {
+          "titleDescription": "Integrieren von Schnittstellen mit APIs und Node.js",
+          "span": [
+            "API-Integration:",
+            "Serverseitige Programmierung mit Node.js:"
+          ],
+          "li": [
+            "Entwicklung und Integration von RESTful APIs, um die Kommunikation zwischen Frontend und Backend zu ermöglichen.",
+            "Aufbau von serverseitigen Logiken und Services mit Node.js für eine nahtlose Verbindung und Datenübertragung."
+          ]
+        },
+        {
+          "titleDescription": "Vertiefung meiner Kenntnisse in Java und Spring",
+          "span": ["Spring Framework:", "Datenbankoperationen mit Hibernate:"],
+          "li": [
+            "Arbeit mit Spring Boot, MVC, Security und Data JPA für die Entwicklung von robusten und skalierbaren Backend-Lösungen.",
+            "Nutzung von Hibernate für effiziente und performante Datenbankoperationen in Java-basierten Anwendungen."
+          ]
+        },
+        {
+          "titleDescription": "Verwalten von Abhängigkeiten mit Maven und Bereitstellung von Anwendungen über Tomcat",
+          "span": [
+            "Abhängigkeitsmanagement mit Maven:",
+            "Deployment über Tomcat:"
+          ],
+          "li": [
+            "Einsatz von Maven zur Verwaltung von Projektabhängigkeiten und zum Automatisieren von Builds.",
+            "Bereitstellung von Java-Anwendungen auf dem Apache Tomcat Server für die Produktion."
+          ]
+        },
+        {
+          "titleDescription": "Implementierung von Webkommunikation und Webservices mittels HTTP und REST",
+          "span": ["HTTP und REST:", "Webkommunikation:"],
+          "li": [
+            "Verwendung von HTTP-Protokollen und REST-Architektur für den Aufbau von Webservices und die Implementierung von Kommunikationsschnittstellen.",
+            "Sicherstellen einer effizienten und sicheren Kommunikation zwischen verschiedenen Systemen und Komponenten."
+          ]
+        },
+        {
+          "titleDescription": "Ausführen komplexer Datenbankabfragen mit SQL",
+          "span": ["SQL-Abfragen:", "Datenbankmanagement:"],
+          "li": [
+            "Durchführung komplexer Abfragen und Datenmanipulationen mit SQL in relationalen Datenbanksystemen wie MySQL und PostgreSQL.",
+            "Verwaltung und Optimierung von Datenbanken für optimale Leistung und Datenintegrität."
+          ]
+        },
+        {
+          "titleDescription": "Versionierung von Datenbankänderungen mit Liquibase",
+          "span": ["Datenbankversionierung:", "Kontinuierliche Integration:"],
+          "li": [
+            "Einsatz von Liquibase zur Nachverfolgung und Verwaltung von Datenbankänderungen und -versionen.",
+            "Sicherstellung einer nahtlosen Integration und kontinuierlichen Bereitstellung durch automatisierte Datenbankänderungen und -migrationen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Leiterin der Rechtsabteilung ",
+      "company": "  Promstroykontrakt",
+      "companyDescription": "Holding-Bauunternehmen ",
+      "link": "https://psk-holding.ru/about/english/",
+      "period": "September 2014 – Februar 2018",
+      "location": "Russland, Samara",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Vertragsmanagement, Verhandlungen und Erstellung von Verträgen",
+          "span": ["Vertragserstellung und -prüfung:", "Verhandlungsführung:"],
+          "li": [
+            "Erstellung, Überprüfung und Verwaltung von Verträgen zur Sicherstellung der rechtlichen Konformität und der Absicherung der Unternehmensinteressen.",
+            "Leitung und Unterstützung bei Vertragsverhandlungen mit Kunden, Lieferanten und Partnern, um optimale Vertragsbedingungen zu erzielen."
+          ]
+        },
+        {
+          "titleDescription": "Account Management und Bearbeitung von Forderungen",
+          "span": ["Forderungsmanagement:", "Kundenbetreuung:"],
+          "li": [
+            "Verwaltung und Bearbeitung von Forderungen, einschließlich der Identifizierung und Verfolgung offener Posten sowie der Durchführung von Mahnverfahren.",
+            "Pflege von Kundenbeziehungen und Management von Kundenkonten, um eine hohe Kundenzufriedenheit und langfristige Geschäftsbeziehungen zu gewährleisten."
+          ]
+        },
+        {
+          "titleDescription": "Überwachung der Einhaltung interner Richtlinien und Compliance-Verfahren",
+          "span": ["Compliance-Überwachung:", "Richtlinienentwicklung:"],
+          "li": [
+            "Sicherstellung der Einhaltung interner Richtlinien und gesetzlicher Vorschriften durch regelmäßige Überprüfungen und Schulungen.",
+            "Entwicklung und Implementierung von Richtlinien und Verfahren zur Verbesserung der Compliance und zur Minimierung rechtlicher Risiken."
+          ]
+        },
+        {
+          "titleDescription": "Planung, Koordination und Überwachung von Projekten",
+          "span": ["Projektmanagement:", "Projektüberwachung:"],
+          "li": [
+            "Leitung und Koordination von Projekten, einschließlich der Planung, Budgetierung und Überwachung der Fortschritte, um die fristgerechte und erfolgreiche Umsetzung sicherzustellen.",
+            "Regelmäßige Überprüfung des Projektstatus und Einleitung von Maßnahmen zur Lösung von Problemen und zur Sicherstellung der Projektziele."
+          ]
+        },
+        {
+          "titleDescription": "Durchsetzung von Forderungen gegen juristische und natürliche Personen",
+          "span": ["Rechtsdurchsetzung:", "Zusammenarbeit mit Anwälten:"],
+          "li": [
+            "Verfolgung und Durchsetzung von Forderungen gegen juristische und natürliche Personen durch rechtliche Maßnahmen und Verfahren.",
+            "Zusammenarbeit mit internen und externen Anwälten, um rechtliche Schritte einzuleiten und durchzusetzen."
+          ]
+        },
+        {
+          "titleDescription": "Organisation und Verwaltung aller rechtlichen und projektspezifischen Dokumente und Unterlagen",
+          "span": ["Dokumentenmanagement:", "Archivierung:"],
+          "li": [
+            "Systematische Organisation und Verwaltung aller rechtlichen und projektspezifischen Dokumente und Unterlagen zur Sicherstellung der Verfügbarkeit und Integrität.",
+            "Entwicklung und Pflege eines effizienten Dokumentations- und Archivierungssystems zur einfachen Nachverfolgbarkeit und Compliance."
+          ]
+        },
+        {
+          "titleDescription": "Zusammenarbeit mit internen Abteilungen, externen Partnern und Rechtsanwälten",
+          "span": ["Interne Zusammenarbeit:", "Externe Kommunikation:"],
+          "li": [
+            "Enge Zusammenarbeit mit anderen Abteilungen zur Abstimmung und Unterstützung bei rechtlichen Fragen und Projekten.",
+            "Koordination und Zusammenarbeit mit externen Partnern und Rechtsanwälten zur Lösung rechtlicher Angelegenheiten und zur Verhandlung von Verträgen."
+          ]
+        },
+        {
+          "titleDescription": "Verantwortung für das Budget der Rechtsabteilung",
+          "span": ["Budgetmanagement:", "Kostenkontrolle:"],
+          "li": [
+            "Planung und Verwaltung des Budgets der Rechtsabteilung zur Sicherstellung einer effizienten und kosteneffektiven Nutzung der Ressourcen.",
+            "Überwachung und Kontrolle der Ausgaben zur Einhaltung des Budgets und zur Identifizierung von Einsparmöglichkeiten."
+          ]
+        },
+        {
+          "titleDescription": "Identifizierung von Verbesserungspotenzialen in den Arbeitsabläufen",
+          "span": ["Prozessoptimierung:", "Qualitätsmanagement:"],
+          "li": [
+            "Analyse und Bewertung der bestehenden Arbeitsabläufe zur Identifizierung von Verbesserungspotenzialen und Implementierung effizienterer Prozesse.",
+            "Implementierung von Maßnahmen zur Verbesserung der Qualität und Effizienz der Arbeitsabläufe in der Rechtsabteilung."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Juristin in der juristischen Abteilung",
+      "company": "",
+      "companyDescription": "Immobilienverwaltung",
+      "link": "",
+      "period": "September 2011 - September 2014",
+      "location": "Russland, Samara",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Unterstützung bei der Verwaltung von Projekten",
+          "span": ["Projektmanagement:", "Rechtliche Beratung:"],
+          "li": [
+            "Mitwirkung an der Planung und Durchführung von Immobilienprojekten, einschließlich der Einhaltung rechtlicher Vorgaben und Fristen.",
+            "Bereitstellung rechtlicher Unterstützung und Beratung für verschiedene Projektteams, um sicherzustellen, dass alle Maßnahmen den geltenden Gesetzen und Vorschriften entsprechen."
+          ]
+        },
+        {
+          "titleDescription": "Organisation von Meetings und Besprechungen",
+          "span": ["Terminplanung:", "Protokollführung:"],
+          "li": [
+            "Koordination und Organisation von Meetings und Besprechungen, einschließlich der Vorbereitung von Agenden und der Sicherstellung, dass alle relevanten Parteien informiert und vorbereitet sind.",
+            "Dokumentation und Nachverfolgung der Ergebnisse und Aufgaben aus Meetings, um sicherzustellen, dass alle Beteiligten ihre Verantwortlichkeiten kennen und nachverfolgen."
+          ]
+        },
+        {
+          "titleDescription": "Unterstützung bei der Erstellung, Prüfung und Verwaltung von Verträgen",
+          "span": ["Vertragsmanagement:", "Verhandlungsunterstützung:"],
+          "li": [
+            "Erstellung, Überprüfung und Verwaltung von Verträgen, um sicherzustellen, dass sie den rechtlichen Anforderungen entsprechen und die Interessen des Unternehmens schützen.",
+            "Unterstützung bei Vertragsverhandlungen, um faire und vorteilhafte Bedingungen für das Unternehmen zu sichern."
+          ]
+        },
+        {
+          "titleDescription": "Dokumentenverwaltung und Überwachung von Fristen",
+          "span": ["Dokumentenmanagement: ", "Fristenüberwachung:"],
+          "li": [
+            "Verwaltung und Organisation aller juristischen Dokumente und Akten, um einen einfachen Zugriff und eine effiziente Bearbeitung sicherzustellen.",
+            "Überwachung und Nachverfolgung wichtiger Fristen, um sicherzustellen, dass alle rechtlichen Verpflichtungen pünktlich erfüllt werden."
+          ]
+        },
+        {
+          "titleDescription": "Erledigung allgemeiner administrativer Aufgaben",
+          "span": ["Büroorganisation: ", "Unterstützung des Teams:"],
+          "li": [
+            "Durchführung allgemeiner administrativer Aufgaben wie Korrespondenz, Aktenpflege und Verwaltung von Bürobedarf.",
+            "Bereitstellung administrativer Unterstützung für das juristische Team, um einen reibungslosen Arbeitsablauf sicherzustellen."
+          ]
+        },
+        {
+          "titleDescription": "Koordination von Kommunikation und Informationen zwischen Abteilungen",
+          "span": ["Interne Kommunikation:", "Informationsmanagement:"],
+          "li": [
+            "Koordination und Weitergabe von Informationen zwischen verschiedenen Abteilungen, um eine effiziente Zusammenarbeit und Informationsfluss zu gewährleisten.",
+            "Sicherstellung, dass alle relevanten Informationen zeitnah und präzise an die entsprechenden Abteilungen und Mitarbeiter weitergegeben werden."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Juristin",
+      "company": "",
+      "companyDescription": "Firma Autojurist",
+      "link": "",
+      "period": "März 2011 - September 2011",
+      "location": "Russland, Samara",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Überprüfung und Analyse von Versicherungspolicen und Verträgen",
+          "span": ["Sorgfältige Prüfung", "Analyse und Bewertung"],
+          "li": [
+            "von Versicherungspolicen, um sicherzustellen, dass alle gesetzlichen und vertraglichen Anforderungen erfüllt sind.",
+            "der Bedingungen und Klauseln in Verträgen, um potenzielle rechtliche Risiken zu identifizieren und zu minimieren."
+          ]
+        },
+        {
+          "titleDescription": "der Bedingungen und Klauseln in Verträgen, um potenzielle rechtliche Risiken zu identifizieren und zu minimieren.",
+          "span": ["Bereitstellung", "Beratung"],
+          "li": [
+            "von rechtlicher Beratung und Unterstützung für interne Teams, um sicherzustellen, dass alle Aktivitäten im Einklang mit den geltenden Gesetzen und Vorschriften stehen.",
+            "von Kunden hinsichtlich ihrer Rechte und Pflichten im Rahmen ihrer Autoversicherungsverträge."
+          ]
+        },
+        {
+          "titleDescription": "Überprüfung von Ansprüchen und Haftungsbeurteilungen",
+          "span": ["Bewertung und Prüfung", "Durchführung"],
+          "li": [
+            "von Versicherungsschäden und Ansprüchen, um deren Gültigkeit und Höhe festzustellen.",
+            "von Haftungsbeurteilungen, um festzustellen, ob und in welchem Umfang die Versicherungsgesellschaft für Schäden haftet."
+          ]
+        },
+        {
+          "titleDescription": "Verhandlungen und Streitbeilegung:",
+          "span": ["Führung", "Teilnahme"],
+          "li": [
+            "von Verhandlungen mit Anspruchstellern, um faire und angemessene Lösungen zu erzielen.",
+            "an Streitbeilegungsverfahren, um Konflikte zwischen den Parteien beizulegen."
+          ]
+        },
+        {
+          "titleDescription": "Compliance und Gesetzeskonformität",
+          "span": ["Sicherstellung,", "Überwachung und Implementierung"],
+          "li": [
+            "dass alle rechtlichen und regulatorischen Anforderungen eingehalten werden.",
+            "von Compliance-Richtlinien, um gesetzeskonformes Handeln sicherzustellen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sicherheitsdienst Inspektorin",
+      "company": "",
+      "companyDescription": "Krankenhaus der Justizvollzugsanstalt",
+      "link": "",
+      "period": "August 2007 - Februar 2011",
+      "location": "Russland Samara",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Koordination von Terminen für die Insassen",
+          "span": ["Organisation und Planung", "Sicherstellung,"],
+          "li": [
+            "von medizinischen, juristischen und anderen wichtigen Terminen für die Insassen des Krankenhauses.",
+            "dass alle Termine rechtzeitig koordiniert und den entsprechenden Abteilungen und Insassen mitgeteilt werden."
+          ]
+        },
+        {
+          "titleDescription": "Zeitplanerstellung und Verlegungstermine",
+          "span": ["Erstellung und Verwaltung", "Planung und Koordination"],
+          "li": [
+            "von Zeitplänen für Insassen, um sicherzustellen, dass sie ihre geplanten Aktivitäten und Verpflichtungen einhalten.",
+            "von Verlegungsterminen innerhalb der Justizvollzugsanstalt und in andere Einrichtungen, um einen reibungslosen Ablauf zu gewährleisten."
+          ]
+        },
+        {
+          "titleDescription": "Überwachung von Gerichtsterminen",
+          "span": ["Überwachung und Verfolgung", "Koordination"],
+          "li": [
+            "der Gerichtstermine der Insassen, um sicherzustellen, dass sie rechtzeitig zu ihren Anhörungen und Verhandlungen erscheinen.",
+            "mit den Justizbehörden und anderen relevanten Stellen, um eine effiziente Kommunikation und Zusammenarbeit zu gewährleisten."
+          ]
+        },
+        {
+          "titleDescription": "Sicherheitskontrollen und -patrouillen",
+          "span": [
+            "Durchführung",
+            "Identifizierung und Behebung",
+            "Zusammenarbeit"
+          ],
+          "li": [
+            "regelmäßiger Sicherheitskontrollen und Patrouillen im Krankenhausbereich, um die Sicherheit der Insassen, des Personals und der Besucher zu gewährleisten.",
+            "von Sicherheitsrisiken, um eine sichere und geschützte Umgebung zu erhalten.",
+            "mit dem Sicherheitspersonal und anderen Abteilungen, um Sicherheitsprotokolle und -richtlinien zu implementieren und zu überwachen."
+          ]
+        }
+      ]
+    }
+  ]
+}

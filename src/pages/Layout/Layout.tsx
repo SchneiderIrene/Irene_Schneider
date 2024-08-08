@@ -25,10 +25,15 @@ import {
 
 } from './styles';
 import { LayotProps } from './types';
+import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 
 function Layout({ children }: LayotProps) {
 const navigate = useNavigate()
+
+const {t} = useTranslation();
+
 
   return (
     <LayoutComponent>
@@ -41,33 +46,33 @@ const navigate = useNavigate()
               textDecoration: isActive ? "underline" : "none"
             })}
             to={'/experience'}>
-             Erfahrung
+             {t("header.experience")}
       </StyledNavLink>
       <StyledNavLink style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none"
             })} 
             to={'/studies'}>
-             Studium
+             {t("header.studies")}
       </StyledNavLink>
       <StyledNavLink style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none"
             })}
             to={'/certificates'}>
-             Zertifikate
+              {t("header.certificates")}
       </StyledNavLink>
-        
       </NavContainer>
+      <LanguageSwitcher/>
       </Header>
       <Main>{children}</Main>
       <Footer>
       <ContactContainer>
         <IconContainer>
             <IconWorld/>
-            <IconText>Deutschland</IconText>
+            <IconText>{t("footer.country")}</IconText>
         </IconContainer>
         <IconContainer>
             <IconCity/>
-            <IconText>Straubing</IconText>
+            <IconText>{t("footer.city")}</IconText>
         </IconContainer>
         <IconContainer>
             <IconPhone/>
@@ -84,7 +89,7 @@ const navigate = useNavigate()
               <AStyled 
               //href='../../../public/Irene Schneider LL.pdf'
               href='/Irene Schneider LL.pdf'
-              download="Irene_Schneider_Lebenslauf">Lebenslauf herunterladen</AStyled> 
+              download="Irene_Schneider_Lebenslauf">{t("footer.download")}</AStyled> 
             </IconText>
         </IconContainerTransform>
       </ContactContainer>
@@ -101,7 +106,7 @@ const navigate = useNavigate()
           <IconXing/>
         </AStyled> 
       </ContactContainer>
-      <IconText>Juni 2024</IconText>
+      <IconText>{t("footer.data")}</IconText>
       </Footer>
     </LayoutComponent>
   );

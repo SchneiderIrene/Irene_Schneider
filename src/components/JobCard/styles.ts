@@ -19,17 +19,18 @@ export const CardComponent = styled.div`
   z-index: 3;
   gap: 1.66vw;
   padding: 3vw;
+  line-height: 1.9em;
 `
 
 export const TitleH2Card = styled.h2`
-  font-size: 1.46vw;
+  font-size: 1.6vw;
   font-weight: bold;
   color: #fcf1e4;
   position: relative;
   z-index: 3;
 `
 export const TitleH3Card = styled.h2`
-  font-size: 1.04vw;
+  font-size: 1.3vw;
   font-weight: bold;
   color: #fcf1e4;
   position: relative;
@@ -37,22 +38,22 @@ export const TitleH3Card = styled.h2`
 `
 
 export const TitleH4Card = styled.h2`
-  font-size: 0.83vw;
+  font-size: 1.1vw;
   color: rgba(252, 241, 228, 0.9);
   position: relative;
   z-index: 3;
 `
 
 export const TitleDesc = styled.h2`
-  font-size: 1.04vw;
+  font-size: 1.3vw;
   color: rgba(252, 241, 228, 0.9);
   position: relative;
   z-index: 3;
 `
 export const DescriptionExperience = styled.p`
-  font-size: 0.83vw;
+  font-size: 1.1vw;
   color: rgba(252, 241, 228, 0.8);
-  line-height: 1.7;
+  line-height: 2;
   position: relative;
   z-index: 3;
 `
