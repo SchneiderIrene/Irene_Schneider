@@ -13,7 +13,7 @@ interface ButtonLanguageProps {
 }
 export const ButtonLanguage = styled.button<ButtonLanguageProps>`
 background-color: transparent;
-font-size: 1rem;
+font-size: 1.2vw;
 border: none;
 color: ${({activ})=> activ ? "rgba(252, 241, 228, 0.6)" : "rgba(252, 241, 228, 0.3)"} ;
 cursor: pointer;
