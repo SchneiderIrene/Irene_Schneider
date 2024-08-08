@@ -1,15 +1,551 @@
 {
-    "header": {
-        "experience" : "Experience",
-        "studies" : "Studies",
-        "certificates" : "Certificates"
-    },
-    "home": {
-            "hello": "Hello, I am",
-            "name": "Irene Schneider",
-            "promising": "a promising",
-            "span": "developer",
-            "specialized": "specialized in React, Redux, and modern web technologies. I develop user-friendly, scalable applications."
+  "header": {
+    "experience": "Experience",
+    "studies": "Studies",
+    "certificates": "Certificates"
+  },
+  "home": {
+    "hello": "Hello, I am",
+    "name": "Irene Schneider",
+    "promising": "a promising",
+    "span": "developer",
+    "specialized": "specialized in React, Redux, and modern web technologies. I develop user-friendly, scalable applications.",
+    "project_Button": "Projects",
+    "what_can_i_do": "What can I do",
+    "all_kinds": "All kinds of web applications for different needs. Personalized solutions and individual approaches for each project team.",
+    "block1_title": "Development and seamless backend integration",
+    "block1_discreption": "Leverage my expertise in JavaScript, TypeScript, React, Redux, HTML5, CSS, and Tailwind for developing dynamic and user-friendly web applications. Implementing seamless interactions between frontend and backend using API and Node.js for an optimal user experience.",
+    "block2_title": "design and",
+    "br": "prototyping",
+    "block2_discreption": "Create appealing user interfaces with modern tools like Figma. Ensure responsive design through media queries for optimal display on various devices.",
+    "block3_title": "development and testing",
+    "block3_discreption": "Develop robust backend solutions with Java and the Spring Framework (Spring Boot, MVC, Security, Data JPA). Efficient dependency management with Maven and deployment of applications on Tomcat. Comprehensive testing with JUnit5 and Postman, and structured version control with Git and GitHub."
+  },
+  "footer": {
+    "country": "Germany",
+    "city": "Straubing",
+    "download": "CV download",
+    "data": "June 2024"
+  },
+  "studies": {
+    "studies_title": "Studies & Further Education",
+    "institut": "Legal Institute SLI of the FPS of Russia",
+    "country_city1": "Russia, Samara",
+    "description_studies1": "Diploma with honors in Law",
+    "description_ait-tr": "School",
+    "country_city2": "Germany, Berlin",
+    "description_studies2": "Fullstack developer with a focus on frontend development"
+  },
+  "certificates": {
+    "certificates_title": "My certificates"
+  },
+  "experience": {
+    "experience_title": "Professional Experience"
+  },
+  "jobs": [
+    {
+      "title": "Front-End Software Developer",
+      "company": "LeafGrow ",
+      "companyDescription": "Startup",
+      "link": "https://leafgrow-app-foign.ondigitalocean.app/#/",
+      "period": "April 2024 - until today",
+      "location": "Germany",
+      "responsibilities": "Responsibilities:",
+      "description": [
+        {
+          "titleDescription": "Design and implement frontend architecture with React for scalable and maintainable applications.",
+          "span": [
+            "Design of Architecture:",
+            "Implementation:",
+            "Scalability:",
+            "Maintainability:"
+          ],
+          "li": [
+            "Includes planning and creating the structure of an application. This involves selecting appropriate design patterns, modular development, and ensuring separation of concerns.",
+            "Implementing architectural decisions with React. This involves creating components, configuring routing (with React Router), establishing global state, and managing the lifecycle of components.",
+            "Ensuring that the application can be easily scaled and handle larger amounts of data and users without losing performance.",
+            "Ensuring that the code is easy to maintain and update. This includes writing clean and well-documented code, using modular and reusable components, and implementing tests."
+          ]
+        },
+        {
+          "titleDescription": "State management with Redux to ensure consistent state management",
+          "span": ["State management: ", "Redux: ", "Consistency: "],
+          "li": [
+            "Managing the application's state to ensure data is consistent and correctly represented across all components.",
+            "Using the Redux library for centralized state management. This involves creating actions, reducers, and the store.",
+            "Ensuring that the application's state is uniform and easily traceable. This is important for debugging and predictable application behavior."
+          ]
+        },
+        {
+          "titleDescription": "Seamless integration of frontend and backend using API and Node.js",
+          "span": ["Integration: ", "API: ", "Node.js: "],
+          "li": [
+            "Configuring the interaction between the client-side (frontend) and the server-side (backend) through an API.",
+            "Creating and using an API for data exchange between the frontend and backend. This can include RESTful API or GraphQL.",
+            "Using Node.js to develop the server logic. This can involve configuring the server, routing requests, and managing the database."
+          ]
+        },
+        {
+          "titleDescription": "Efficient handling of API requests and error resolution",
+          "span": ["API requests: ", "Error resolution: "],
+          "li": [
+            "Creating and executing HTTP requests to the API. This includes using libraries such as Axios or Fetch.",
+            "Handling errors during the execution of API requests. This can involve setting up global error handlers, using try-catch blocks, and providing clear error messages to users."
+          ]
+        },
+        {
+          "titleDescription": "Development of intuitive user interface components and interactive features",
+          "span": ["User interface components: ", "Interactive features: "],
+          "li": [
+            "Creating user interfaces (UI) with React components. This includes creating forms, buttons, modals, and other UI elements.",
+            "Developing interactive elements such as animations, transitions, and interactive maps to enhance the user experience."
+          ]
+        },
+        {
+          "titleDescription": "Implementation of secure features for user registration and authentication",
+          "span": ["User registration: ", "Authentication: "],
+          "li": [
+            "Creating a system for user registration. This includes form validation, sending data to the server, and handling responses.",
+            "Setting up user authentication systems. This can involve using JWT (JSON Web Tokens), OAuth, or other methods."
+          ]
+        },
+        {
+          "titleDescription": "Management and updating of user profiles",
+          "span": ["User profiles: ", "Updating: "],
+          "li": [
+            "Creating and managing user profiles. This includes displaying user information, allowing profile edits, and uploading avatars.",
+            "Ensuring users can update their information and save these changes on the server."
+          ]
+        },
+        {
+          "titleDescription": "Personalization of content based on user preferences",
+          "span": ["Personalization: ", "User preferences: "],
+          "li": [
+            "Customizing displayed content based on user preferences. This can include recommendations, personalized news feeds, and interface settings.",
+            "Storing and utilizing user preferences to enhance interaction with the application."
+          ]
+        },
+        {
+          "titleDescription": "Working in a highly cooperative team environment and excellent coordinated teamwork",
+          "span": [
+            "Team environment: ",
+            "Cooperation: ",
+            "Effective collaboration: ",
+            "Project success: "
+          ],
+          "li": [
+            "Collaborating with developers, designers, and project managers.",
+            "Using version control systems (e.g., Git), participating in team meetings and discussions.",
+            "Sharing knowledge and experience, solving problems together.",
+            "Contributing to the successful completion, meeting deadlines, and achieving goals."
+          ]
+        },
+        {
+          "title": "Fullstack Software Development Student",
+          "company": "AIT-TR",
+          "companyDescription": "GmbH",
+          "link": "https://www.ait-tr.de/de",
+          "period": "November 2023 – June 2024",
+          "location": "Germany, Berlin",
+          "responsibilities": "Responsibilities:",
+          "description": [
+            {
+              "titleDescription": "Developing dynamic applications with JavaScript, TypeScript, and React",
+              "span": [
+                "Using modern JavaScript technologies: ",
+                "Efficient and responsive user interfaces: ",
+                "State management with Redux: ",
+                "Styling with Tailwind CSS: ",
+                "Markup with HTML5 and CSS: "
+              ],
+              "li": [
+                "Developing applications using JavaScript and TypeScript to ensure strong typing and improved maintainability.",
+                "Building user interfaces with React that are both responsive and efficient.",
+                "Implementing Redux for robust state management in complex applications.",
+                "Utilizing Tailwind CSS for quick and efficient creation of modern and appealing UI designs.",
+                "Using HTML5 and CSS for structuring and styling web pages."
+              ]
+            }
+          ]
+        },
+        {
+          "titleDescription": "Integrating interfaces with APIs and Node.js",
+          "span": [
+            "API integration: ",
+            "Server-side programming with Node.js: "
+          ],
+          "li": [
+            "Developing and integrating RESTful APIs to enable communication between frontend and backend.",
+            "Building server-side logic and services with Node.js for seamless connectivity and data transfer."
+          ]
+        },
+        {
+          "titleDescription": "Deepening my knowledge in Java and Spring",
+          "span": [
+            "Spring Framework: ",
+            "Database operations with Hibernate: "
+          ],
+          "li": [
+            "Working with Spring Boot, MVC, Security, and Data JPA for developing robust and scalable backend solutions.",
+            "Utilizing Hibernate for efficient and performant database operations in Java-based applications."
+          ]
+        },
+        {
+          "titleDescription": "Managing dependencies with Maven and deploying applications via Tomcat",
+          "span": [
+            "Dependency management with Maven: ",
+            "Deployment via Tomcat: "
+          ],
+          "li": [
+            "Using Maven to manage project dependencies and automate builds.",
+            "Deploying Java applications on the Apache Tomcat server for production."
+          ]
+        },
+        {
+          "titleDescription": "Implementing web communication and web services using HTTP and REST",
+          "span": ["HTTP and REST: ", "Web communication: "],
+          "li": [
+            "Using HTTP protocols and REST architecture to build web services and implement communication interfaces.",
+            "Ensuring efficient and secure communication between different systems and components."
+          ]
+        },
+        {
+          "titleDescription": "Executing complex database queries with SQL",
+          "span": ["SQL queries: ", "Database management: "],
+          "li": [
+            "Performing complex queries and data manipulations with SQL in relational database systems such as MySQL and PostgreSQL.",
+            "Managing and optimizing databases for optimal performance and data integrity."
+          ]
+        },
+        {
+          "titleDescription": "Versioning database changes with Liquibase",
+          "span": ["Database versioning: ", "Continuous integration: "],
+          "li": [
+            "Using Liquibase to track and manage database changes and versions.",
+            "Ensuring seamless integration and continuous delivery through automated database changes and migrations."
+          ]
         }
-    
+      ]
+    },
+    {
+      "title": "Fullstack Softwareentwickler Student",
+      "company": "AIT-TR",
+      "companyDescription": "GmbH",
+      "link": "https://www.ait-tr.de/de",
+      "period": "November 2023 – Juni 2024",
+      "location": "Deutschland, Berlin",
+      "responsibilities": "Hauptverantwortlichkeiten:",
+      "description": [
+        {
+          "titleDescription": "Developing dynamic applications with JavaScript, TypeScript, and React",
+          "span": [
+            "Using modern JavaScript technologies:",
+            "Efficient and responsive user interfaces:",
+            "State management with Redux:",
+            "Styling with Tailwind CSS:",
+            "Markup with HTML5 and CSS:"
+          ],
+          "li": [
+            "Developing applications using JavaScript and TypeScript to ensure strong typing and improved maintainability.",
+            "Building user interfaces with React that are both responsive and efficient.",
+            "Implementing Redux for robust state management in complex applications.",
+            "Using Tailwind CSS for the rapid and efficient creation of modern and attractive UI designs.",
+            "Utilizing HTML5 and CSS for structuring and styling web pages."
+          ]
+        },
+        {
+          "titleDescription": "Integrating interfaces with APIs and Node.js",
+          "span": ["API integration:", "Server-side programming with Node.js:"],
+          "li": [
+            "Developing and integrating RESTful APIs to enable communication between the frontend and backend.",
+            "Building server-side logic and services with Node.js for seamless connection and data transfer."
+          ]
+        },
+        {
+          "titleDescription": "Deepening my knowledge in Java and Spring",
+          "span": ["Spring Framework:", "Database operations with Hibernate:"],
+          "li": [
+            "Working with Spring Boot, MVC, Security, and Data JPA to develop robust and scalable backend solutions.",
+            "Using Hibernate for efficient and performant database operations in Java-based applications."
+          ]
+        },
+        {
+          "titleDescription": "Managing dependencies with Maven and deploying applications via Tomcat",
+          "span": [
+            "Dependency management with Maven:",
+            "Deployment via Tomcat:"
+          ],
+          "li": [
+            "Using Maven to manage project dependencies and automate builds.",
+            "Deploying Java applications on the Apache Tomcat server for production."
+          ]
+        },
+        {
+          "titleDescription": "Implementation of web communication and web services using HTTP and REST",
+          "span": ["HTTP and REST:", "Web communication:"],
+          "li": [
+            "Using HTTP protocols and REST architecture to build web services and implement communication interfaces.",
+            "Ensuring efficient and secure communication between different systems and components."
+          ]
+        },
+        {
+          "titleDescription": "Executing complex database queries with SQL",
+          "span": ["SQL Queries:", "Database Management:"],
+          "li": [
+            "Performing complex queries and data manipulations with SQL in relational database systems such as MySQL and PostgreSQL.",
+            "Managing and optimizing databases for optimal performance and data integrity."
+          ]
+        },
+        {
+          "titleDescription": "Versioning database changes with Liquibase",
+          "span": ["Database Versioning:", "Continuous Integration:"],
+          "li": [
+            "Using Liquibase to track and manage database changes and versions.",
+            "Ensuring seamless integration and continuous delivery through automated database changes and migrations."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Head of Legal Department",
+      "company": "Promstroykontrakt",
+      "companyDescription": "Holding construction company",
+      "link": "https://psk-holding.ru/about/english/",
+      "period": "September 2014 – February 2018",
+      "location": "Russia, Samara",
+      "responsibilities": "Responsibilities:",
+      "description": [
+        {
+          "titleDescription": "Contract management, negotiations, and contract drafting",
+          "span": ["Contract drafting and review: ", "Negotiation: "],
+          "li": [
+            "Drafting, reviewing, and managing contracts to ensure legal compliance and protection of company interests.",
+            "Leading and supporting contract negotiations with clients, suppliers, and partners to achieve optimal contract terms."
+          ]
+        },
+        {
+          "titleDescription": "Account management and handling of receivables",
+          "span": ["Receivables management: ", "Customer service: "],
+          "li": [
+            "Managing and processing receivables, including identifying and tracking open items and conducting collection procedures.",
+            "Maintaining customer relationships and managing customer accounts to ensure high customer satisfaction and long-term business relationships."
+          ]
+        },
+        {
+          "titleDescription": "Monitoring adherence to internal policies and compliance procedures",
+          "span": ["Compliance monitoring: ", "Policy development: "],
+          "li": [
+            "Ensuring adherence to internal policies and legal regulations through regular reviews and training.",
+            "Developing and implementing policies and procedures to enhance compliance and minimize legal risks."
+          ]
+        },
+        {
+          "titleDescription": "Planning, coordinating, and monitoring of projects",
+          "span": ["Project management: ", "Project monitoring: "],
+          "li": [
+            "Leading and coordinating projects, including planning, budgeting, and monitoring progress to ensure timely and successful implementation.",
+            "Regularly reviewing project status and taking actions to resolve issues and ensure project goals are met."
+          ]
+        },
+        {
+          "titleDescription": "Enforcement of claims against legal entities and individuals",
+          "span": ["Legal enforcement: ", "Collaboration with lawyers: "],
+          "li": [
+            "Pursuing and enforcing claims against legal entities and individuals through legal measures and procedures.",
+            "Collaborating with internal and external lawyers to initiate and enforce legal actions."
+          ]
+        },
+        {
+          "titleDescription": "Organization and management of all legal and project-specific documents and records",
+          "span": ["Document management: ", "Archiving: "],
+          "li": [
+            "Systematic organization and management of all legal and project-specific documents and records to ensure availability and integrity.",
+            "Developing and maintaining an efficient documentation and archiving system for easy traceability and compliance."
+          ]
+        },
+        {
+          "titleDescription": "Collaboration with internal departments, external partners, and lawyers",
+          "span": ["Internal collaboration: ", "External communication: "],
+          "li": [
+            "Close collaboration with other departments to coordinate and support legal questions and projects.",
+            "Coordinating and working with external partners and lawyers to resolve legal matters and negotiate contracts."
+          ]
+        },
+        {
+          "titleDescription": "Responsibility for the budget of the legal department",
+          "span": ["Budget management: ", "Cost control: "],
+          "li": [
+            "Planning and managing the legal department's budget to ensure efficient and cost-effective use of resources.",
+            "Monitoring and controlling expenses to adhere to the budget and identify potential savings."
+          ]
+        },
+        {
+          "titleDescription": "Identifying areas for improvement in workflows",
+          "span": ["Process optimization: ", "Quality management: "],
+          "li": [
+            "Analyzing and evaluating existing workflows to identify areas for improvement and implement more efficient processes.",
+            "Implementing measures to enhance the quality and efficiency of workflows within the legal department."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal Advisor in the Legal Department",
+      "company": "",
+      "companyDescription": "Real estate management",
+      "link": "",
+      "period": "September 2011 - September 2014",
+      "location": "Russia, Samara",
+      "responsibilities": "Responsibilities:",
+      "description": [
+        {
+          "titleDescription": "Support in project management",
+          "span": ["Project management: ", "Legal advice: "],
+          "li": [
+            "Assisting in the planning and execution of real estate projects, including compliance with legal requirements and deadlines.",
+            "Providing legal support and advice to various project teams to ensure that all actions comply with applicable laws and regulations."
+          ]
+        },
+        {
+          "titleDescription": "Organization of meetings and discussions",
+          "span": ["Scheduling: ", "Minute-taking: "],
+          "li": [
+            "Coordinating and organizing meetings and discussions, including preparing agendas and ensuring all relevant parties are informed and prepared.",
+            "Documenting and tracking the outcomes and tasks from meetings to ensure all participants are aware of and follow up on their responsibilities."
+          ]
+        },
+        {
+          "titleDescription": "Support in drafting, reviewing, and managing contracts",
+          "span": ["Contract management: ", "Negotiation support: "],
+          "li": [
+            "Drafting, reviewing, and managing contracts to ensure they meet legal requirements and protect the company's interests.",
+            "Supporting contract negotiations to secure fair and advantageous terms for the company."
+          ]
+        },
+        {
+          "titleDescription": "Document management and deadline monitoring",
+          "span": ["Document management: ", "Deadline monitoring: "],
+          "li": [
+            "Managing and organizing all legal documents and files to ensure easy access and efficient processing.",
+            "Monitoring and tracking important deadlines to ensure all legal obligations are met on time."
+          ]
+        },
+        {
+          "titleDescription": "Completion of general administrative tasks",
+          "span": ["Office organization: ", "Team support: "],
+          "li": [
+            "Performing general administrative tasks such as correspondence, file maintenance, and office supplies management.",
+            "Providing administrative support to the legal team to ensure smooth workflow."
+          ]
+        },
+        {
+          "titleDescription": "Coordination of communication and information between departments",
+          "span": ["Internal communication: ", "Information management: "],
+          "li": [
+            "Coordinating and disseminating information between different departments to ensure efficient collaboration and information flow.",
+            "Ensuring that all relevant information is promptly and accurately communicated to the appropriate departments and employees."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal Advisor",
+      "company": "",
+      "companyDescription": "Autojurist Company",
+      "link": "",
+      "period": "March 2011 - September 2011",
+      "location": "Russia, Samara",
+      "responsibilities": "Responsibilities:",
+      "description": [
+        {
+          "titleDescription": "Review and analysis of insurance policies and contracts",
+          "span": ["Thorough review: ", "Analysis and evaluation: "],
+          "li": [
+            "Reviewing insurance policies to ensure all legal and contractual requirements are met.",
+            "Analyzing the terms and clauses in contracts to identify and minimize potential legal risks."
+          ]
+        },
+        {
+          "titleDescription": "Provision of legal advice and support",
+          "span": ["Provision: ", "Advice: "],
+          "li": [
+            "Providing legal advice and support to internal teams to ensure that all activities are in compliance with applicable laws and regulations.",
+            "Advising clients on their rights and obligations under their auto insurance contracts."
+          ]
+        },
+        {
+          "titleDescription": "Review of claims and liability assessments",
+          "span": ["Evaluation and review: ", "Execution: "],
+          "li": [
+            "Assessing insurance damage and claims to determine their validity and amount.",
+            "Conducting liability assessments to determine whether and to what extent the insurance company is liable for damages."
+          ]
+        },
+        {
+          "titleDescription": "Negotiations and dispute resolution",
+          "span": ["Conducting: ", "Participation: "],
+          "li": [
+            "Negotiating with claimants to achieve fair and reasonable solutions.",
+            "Participating in dispute resolution procedures to settle conflicts between parties."
+          ]
+        },
+        {
+          "titleDescription": "Compliance and legal conformity",
+          "span": ["Ensuring: ", "Monitoring and implementation: "],
+          "li": [
+            "That all legal and regulatory requirements are adhered to.",
+            "Implementing compliance policies to ensure lawful conduct."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security Service Inspector",
+      "company": "",
+      "companyDescription": "Prison Hospital",
+      "link": "",
+      "period": "August 2007 - February 2011",
+      "location": "Russia, Samara",
+      "responsibilities": "Responsibilities:",
+      "description": [
+        {
+          "titleDescription": "Coordination of appointments for inmates",
+          "span": ["Organization and planning: ", "Ensuring: "],
+          "li": [
+            "Medical, legal, and other important appointments for the inmates of the hospital.",
+            "That all appointments are timely coordinated and communicated to the relevant departments and inmates."
+          ]
+        },
+        {
+          "titleDescription": "Schedule creation and transfer appointments",
+          "span": ["Creation and management: ", "Planning and coordination: "],
+          "li": [
+            "Creating schedules for inmates to ensure they meet their planned activities and obligations.",
+            "Planning and coordinating transfer appointments within the prison and to other facilities to ensure smooth operations."
+          ]
+        },
+        {
+          "titleDescription": "Monitoring of court appointments",
+          "span": ["Monitoring and tracking: ", "Coordination: "],
+          "li": [
+            "The court appointments of inmates to ensure they appear timely for their hearings and trials.",
+            "With judicial authorities and other relevant parties to ensure efficient communication and collaboration."
+          ]
+        },
+        {
+          "titleDescription": "Security checks and patrols",
+          "span": [
+            "Conducting: ",
+            "Identifying and addressing: ",
+            "Collaboration: "
+          ],
+          "li": [
+            "Regular security checks and patrols in the hospital area to ensure the safety of inmates, staff, and visitors.",
+            "Security risks to maintain a safe and secure environment.",
+            "With security personnel and other departments to implement and monitor security protocols and policies."
+          ]
+        }
+      ]
+    }
+  ]
 }

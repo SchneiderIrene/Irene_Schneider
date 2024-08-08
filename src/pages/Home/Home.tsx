@@ -7,11 +7,8 @@ import { useTranslation } from "react-i18next";
 function Home(){
     const navigate = useNavigate()
 
-    const {t, i18n} = useTranslation();
-    console.log(i18n.language);
-    
-
-    
+    const {t} = useTranslation();
+   
     return (
         <HomeContainer>
             <HeroSection>
@@ -22,7 +19,7 @@ function Home(){
                 <TextHeroSection>{t("home.promising")} <span style={ {fontWeight : "bold"}}>Frontend-{t("home.span")}</span>, {t("home.specialized")}</TextHeroSection>
                 </ArticleText>
                 <ButtonControl>
-                    <Button name="Projekten" onButtonClick={()=>{navigate("/projects")}}/>
+                    <Button name={t("home.project_Button")} onButtonClick={()=>{navigate("/projects")}}/>
                     <Button name="GitHub" onButtonClick={()=>window.open("https://github.com/SchneiderIrene", '_blank', 'noopener,noreferrer')} />
                 </ButtonControl>
                 </HeroArticle>
@@ -31,30 +28,29 @@ function Home(){
                      <ElipceComponent/>
                  </ContainerEclipse>
             </HeroSection>
-            
             <ServiseSection>
                 <Elipce/>
                 <ArticleTextService>
-                    <TitleServiceSection>Was kann ich tun</TitleServiceSection>
-                    <TextServiceSection>Alle Arten von Webanwendungen für unterschiedliche Anforderungen Personalisierte Lösungen und individuelle Herangehensweisen für jedes Projektteam.</TextServiceSection>
+                    <TitleServiceSection>{t("home.what_can_i_do")}</TitleServiceSection>
+                    <TextServiceSection>{t("home.all_kinds")}</TextServiceSection>
                 </ArticleTextService>
                 <BlockContainer>
                     <Block>
                         <NummerBlock>1</NummerBlock>
-                        <TitleBlock>Front-End Entwicklung und nahtlose Backend-Integration</TitleBlock>
-                        <DescriptionBlock>Nutzen Sie meine Expertise in JavaScript, TypeScript, React, Redux, HTML5, CSS und Tailwind für die Entwicklung dynamischer und benutzerfreundlicher Webanwendungen. Implementierung nahtloser Interaktionen zwischen Frontend und Backend mittels API und Node.js für eine optimale Benutzererfahrung.</DescriptionBlock>
+                        <TitleBlock>Frontend-{t("home.block1_title")}</TitleBlock>
+                        <DescriptionBlock>{t("home.block1_discreption")}</DescriptionBlock>
                     </Block>
                     <Linie/>
                     <Block>
                         <NummerBlock>2</NummerBlock>
-                        <TitleBlock>UI/UX Design und <br/>Prototyping</TitleBlock>
-                        <DescriptionBlock>Erstellen Sie ansprechende Benutzeroberflächen mit modernen Tools wie Figma. Sicherstellung eines responsiven Designs durch Media-Queries, um eine optimale Darstellung auf verschiedenen Geräten zu gewährleisten.</DescriptionBlock>
+                        <TitleBlock>UI/UX {t("home.block2_title")} <br/>{t("home.br")}</TitleBlock>
+                        <DescriptionBlock>{t("home.block2_discreption")}</DescriptionBlock>
                     </Block>
                     <Linie/>
                     <Block>
                         <NummerBlock>3</NummerBlock>
-                        <TitleBlock>Backend Entwicklung und Testing</TitleBlock>
-                        <DescriptionBlock>Entwicklung robuster Backend-Lösungen mit Java und dem Spring Framework (Spring Boot, MVC, Security, Data JPA). Effiziente Verwaltung von Abhängigkeiten mit Maven und Deployment von Anwendungen auf Tomcat. Umfassendes Testing mit JUnit5 und Postman sowie strukturierte Versionskontrolle mit Git und GitHub.</DescriptionBlock>
+                        <TitleBlock>Backend {t("home.block3_title")}</TitleBlock>
+                        <DescriptionBlock>{t("home.block3_discreption")}</DescriptionBlock>
                     </Block>
                 </BlockContainer>
             </ServiseSection>

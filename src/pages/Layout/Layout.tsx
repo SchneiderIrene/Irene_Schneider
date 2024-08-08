@@ -68,11 +68,11 @@ const {t} = useTranslation();
       <ContactContainer>
         <IconContainer>
             <IconWorld/>
-            <IconText>Deutschland</IconText>
+            <IconText>{t("footer.country")}</IconText>
         </IconContainer>
         <IconContainer>
             <IconCity/>
-            <IconText>Straubing</IconText>
+            <IconText>{t("footer.city")}</IconText>
         </IconContainer>
         <IconContainer>
             <IconPhone/>
@@ -89,7 +89,7 @@ const {t} = useTranslation();
               <AStyled 
               //href='../../../public/Irene Schneider LL.pdf'
               href='/Irene Schneider LL.pdf'
-              download="Irene_Schneider_Lebenslauf">Lebenslauf herunterladen</AStyled> 
+              download="Irene_Schneider_Lebenslauf">{t("footer.download")}</AStyled> 
             </IconText>
         </IconContainerTransform>
       </ContactContainer>
@@ -106,7 +106,7 @@ const {t} = useTranslation();
           <IconXing/>
         </AStyled> 
       </ContactContainer>
-      <IconText>Juni 2024</IconText>
+      <IconText>{t("footer.data")}</IconText>
       </Footer>
     </LayoutComponent>
   );
