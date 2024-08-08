@@ -12,7 +12,7 @@ i18n
     debug: true, // Включение отладки
     detection: {
       order: ['queryString', 'cookie'], // Порядок определения языка
-      caches: [], // Кэширование языка в cookie
+      caches: ['cookie'], // Кэширование языка в cookie
     },
     interpolation: {
       escapeValue: false, // Не экранировать значения
