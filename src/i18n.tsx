@@ -11,8 +11,9 @@ i18n
     fallbackLng: 'de', // Язык по умолчанию
     debug: true, // Включение отладки
     detection: {
-      order: ['queryString', 'cookie'], // Порядок определения языка
-      caches: ['cookie'], // Кэширование языка в cookie
+      order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      caches: ['cookie'], // Сохранение языка в куки
+      cookieOptions: { path: '/', sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 } // 7 дней
     },
     interpolation: {
       escapeValue: false, // Не экранировать значения
