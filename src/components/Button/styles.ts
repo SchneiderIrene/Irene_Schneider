@@ -18,6 +18,11 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
     :hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 480px){
+   height: 8vw;
+   font-size: 0.7rem;
+}
   
 
 ` 
