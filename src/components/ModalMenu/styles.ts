@@ -16,7 +16,7 @@ export const ModalContent = styled.div`
   left: 75%;
   transform-origin: center;
  width: 80%;
- height: 100%;
+ height: 200%;
   padding: 1.04vw;
   box-sizing: border-box;
   z-index: 1001;

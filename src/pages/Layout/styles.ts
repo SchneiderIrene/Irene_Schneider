@@ -74,7 +74,7 @@ export const ModalContainer = styled.div`
   gap: 22vw;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   padding: 10vw;
   position: fixed;
   top: 50%;
@@ -121,8 +121,6 @@ export const StyledNavLink = styled(NavLink)`
 }
 `
 
-
-
 export const Main = styled.main`
   width: 100%;
   min-width: 59vw;
@@ -153,6 +151,7 @@ export const Footer = styled.footer`
   flex-direction: row;
   justify-content: space-around;
   align-items: end;
+  margin-top: 7vw;
 }
 `
 

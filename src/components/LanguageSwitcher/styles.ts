@@ -9,9 +9,10 @@ z-index: 7;
 @media (max-width: 480px){
   position: static;
   gap: 7vw;
+ margin-top: 6vw;
 }
 @media (min-width: 481px) and (max-width: 1020px ){
-  top: 5px;
+  top: 1vw;
 }
 `
 

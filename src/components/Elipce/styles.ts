@@ -14,7 +14,7 @@ export const ContainerEclipse = styled.div`
 
   @media (max-width: 480px){
     right:-4vw;
-    bottom: -25vw;
+    bottom: -15vw;
 }
 `
 
