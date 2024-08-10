@@ -117,7 +117,7 @@ export const StyledNavLink = styled(NavLink)`
   }
 
   @media (max-width: 480px){
-    font-size: 5vw;
+    font-size: 1.2rem;
 }
 `
 
