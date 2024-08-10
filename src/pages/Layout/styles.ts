@@ -149,7 +149,7 @@ export const Footer = styled.footer`
   @media (max-width: 480px){
   padding: 4vw;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: end;
   margin-top: 7vw;
 }

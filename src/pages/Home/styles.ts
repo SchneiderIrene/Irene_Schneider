@@ -43,7 +43,7 @@ flex-direction: column;
 gap: 1vw;
 
 @media (max-width: 480px){
-    width: 90vw;
+    width: 100%;
 }
 `
 
@@ -87,7 +87,7 @@ width: 52vw;
 
 @media (max-width: 480px){
     top: -15vw;
-    left: 20vw;
+    left: 30vw;
     width: 80vw;
    
 }
