@@ -20,8 +20,9 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
   }
 
   @media (max-width: 480px){
-   height: 8vw;
-   font-size: 0.7rem;
+   height: 10vw;
+   font-size: 0.9rem;
+   border: 0.6vw solid #800080;
 }
   
 
