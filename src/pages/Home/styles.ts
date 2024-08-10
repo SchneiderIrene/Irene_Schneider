@@ -196,7 +196,7 @@ color: #FCF1E4;
 
 @media (max-width: 480px){
     font-size: 1rem;
-    width: 80%;
+    width: 90%;
 }
 `
 export const DescriptionBlock = styled.p`

@@ -21,8 +21,8 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
 
   @media (max-width: 480px){
    height: 10vw;
-   font-size: 0.9rem;
-   border: 0.6vw solid #800080;
+   font-size: 0.7rem;
+   border: 0.5vw solid #800080;
 }
   
 
