@@ -64,7 +64,7 @@ text-shadow: 2px 2px 0px rgba(252, 241, 228, 0.1), -2px -2px 0px rgba(252, 241, 
 color: #FCF1E4;
 
 @media (max-width: 480px){
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 `
 export const ButtonControl = styled.div`
