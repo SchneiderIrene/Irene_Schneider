@@ -14,6 +14,7 @@ display: flex;
 
 @media (max-width: 480px){
   flex-direction: column;
+  gap: 10vw;
 }
 `
 
@@ -42,7 +43,7 @@ flex-direction: column;
 gap: 1vw;
 
 @media (max-width: 480px){
-    width: 80vw;
+    width: 90vw;
 }
 `
 
@@ -63,7 +64,7 @@ text-shadow: 2px 2px 0px rgba(252, 241, 228, 0.1), -2px -2px 0px rgba(252, 241, 
 color: #FCF1E4;
 
 @media (max-width: 480px){
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 `
 export const ButtonControl = styled.div`
@@ -74,7 +75,7 @@ gap: 1vw;
 @media (max-width: 480px){
    width: 100%;
    gap: 2vw;
-   margin-bottom: -10vw;
+   /* margin-bottom: -10vw; */
 }
 `
 export const FotoArticle = styled.img`
