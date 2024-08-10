@@ -6,6 +6,13 @@ position: absolute;
 right: 15vw;
 top: 0;
 z-index: 7;
+@media (max-width: 480px){
+  position: static;
+  gap: 7vw;
+}
+@media (min-width: 481px) and (max-width: 1020px ){
+  top: 5px;
+}
 `
 
 interface ButtonLanguageProps {
@@ -20,5 +27,9 @@ cursor: pointer;
 
 :hover {
     transform: scale(1.3);
+  }
+
+  @media (max-width: 480px){
+    font-size: 4vw;
   }
 `
