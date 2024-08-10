@@ -37,7 +37,7 @@ function Home(){
                 <BlockContainer>
                     <Block>
                         <NummerBlock>1</NummerBlock>
-                        <TitleBlock>Frontend-{t("home.block1_title")}</TitleBlock>
+                        <TitleBlock>Frontend {t("home.block1_title")}</TitleBlock>
                         <DescriptionBlock>{t("home.block1_discreption")}</DescriptionBlock>
                     </Block>
                     <Linie/>
