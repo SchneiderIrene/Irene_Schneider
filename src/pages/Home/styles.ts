@@ -151,7 +151,7 @@ z-index: 4;
 
 @media (max-width: 480px){
     font-size: 0.7rem;
-    text-align: left;
+    text-align: justify;
     line-height: 2;
 }
 `
