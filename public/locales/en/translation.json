@@ -464,10 +464,27 @@
     }
   ],
   "projects": {
+  "titleProject": "My Projects",
+  "discription1": "The project is a weather application developed in TypeScript with React and Redux. The application allows the user to retrieve weather information for a desired city. The user enters the name of the city, and a request is sent to the server. The server returns the current weather data, which is then displayed in the application.",
+  "title1": "Weather App",
+  "discription2": "LeafGrow is a project for managing cannabis cultivation. The frontend part of the application was developed using TypeScript with React and Redux, allowing seamless integration with the backend and database. It provides a user-friendly, responsive interface that works optimally across different devices. LeafGrow helps users control and manage all aspects of cannabis cultivation.",
+  "title2": "LeafGrow",
+  "discription3": "A mini-project where the user receives an interesting cat fact from the server upon request. The frontend, developed in TypeScript and React, uses Redux for state management. The application integrates with a backend to retrieve cat facts and offers automatic translation into German, English, or Russian, based on the user's selected language.",
+  "title3": "Cat Facts",
     "cat": {
       "buttonBack" : "My projects",
       "buttonCat" : "Get cat fact",
       "buttonDeleteAll" : "Delete all data"
+    },
+    "weather" : {
+      "buttonSave" : "Save",
+      "buttonDelete" : "Delete",
+      "buttonDeleteAll" : "Delete all cards",
+      "bunttonProjects" : "My",
+      "bunttonProjects_br" : "Projects",
+      "buttonSearch": "Search",
+      "buttonMyWeather" : "My Weather",
+      "ooops" : "Ooops, you don't have saved weather ..."
     }
   }
 }

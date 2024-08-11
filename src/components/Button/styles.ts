@@ -23,6 +23,9 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
    height: 10vw;
    font-size: 0.7rem;
    border: 0.5vw solid #800080;
+   :hover {
+    transform: none;
+  }
 }
   
 

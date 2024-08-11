@@ -15,6 +15,14 @@ export const WeatherMainWrapper = styled.div`
   border-radius: 0.625vw;
   background-image: url(${Background});
   background-size: 100%;
+
+  @media (max-width: 480px) {
+    min-height: 80vh;
+    height: auto;
+    background-size: cover;
+    padding: 25vw 5vw 15vw 5vw;
+    gap: 5vw;
+  }
 `
 
 export const WeatherSearchWrapper = styled.div`
@@ -22,6 +30,14 @@ export const WeatherSearchWrapper = styled.div`
   justify-content: space-between;
   gap: 0.78vw;
   width: 36.45vw;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3vw;
+    width: 100%;
+  }
 `
 interface ButtonStylesProps {
   disabled: boolean
@@ -42,6 +58,16 @@ export const WeatherButton = styled.button<ButtonStylesProps>`
     ${({ disabled }) =>
       disabled ? "transform: scale(1.0)" : "transform: scale(1.1)"}
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 10vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    :hover {
+      transform: none;
+    }
+  }
 `
 export const MyWeatherButton = styled.button<ButtonStylesProps>`
   width: 36.45vw;
@@ -59,26 +85,50 @@ export const MyWeatherButton = styled.button<ButtonStylesProps>`
     ${({ disabled }) =>
       disabled ? "transform: scale(1.0)" : "transform: scale(1.1)"}
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 10vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    :hover {
+      transform: none;
+    }
+  }
 `
 
 export const ProjekteButton = styled.button<ButtonStylesProps>`
-position: absolute;
-left: 50px;
-width: 4vw;
-height: 4vw;
-border-radius: 2.6vw;
-background-color: ${({ disabled }) =>
-  disabled ? "rgba(54, 120, 180, 0.7)" : "rgba(54, 120, 180, 1)"};
-border: none;
-color: ${({ disabled }) =>
-  disabled ? "rgba(255, 255, 255, 0.6)" : "aliceblue"};
-font-size: 0.6vw;
-cursor: ${({ disabled }) => (disabled ? "auto" : "pointer")};
+  position: absolute;
+  left: 2.6vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 2.6vw;
+  background-color: ${({ disabled }) =>
+    disabled ? "rgba(54, 120, 180, 0.7)" : "rgba(54, 120, 180, 1)"};
+  border: none;
+  color: ${({ disabled }) =>
+    disabled ? "rgba(255, 255, 255, 0.6)" : "aliceblue"};
+  font-size: 0.6vw;
+  cursor: ${({ disabled }) => (disabled ? "auto" : "pointer")};
 
-:hover {
-  ${({ disabled }) =>
-    disabled ? "transform: scale(1.0)" : "transform: scale(1.1)"}
-}
+  :hover {
+    ${({ disabled }) =>
+      disabled ? "transform: scale(1.0)" : "transform: scale(1.1)"}
+  }
+
+  @media (max-width: 480px) {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    left: 1vw;
+    top: 1vw;
+
+    :hover {
+      transform: none;
+    }
+  }
 `
 export const WeatherInput = styled.input`
   height: 2.5vw;
@@ -97,25 +147,41 @@ export const WeatherInput = styled.input`
   ::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 10vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    padding: 3vw;
+  }
 `
 
 export const WeatherBlock = styled.div`
-  width: 100%;
-  height: 6.71vw;
+  width: 36.92vw;
+  height: 11.45vw;
   background-color: rgba(47, 72, 111, 0.62);
   border-radius: 0.93vw;
   color: aliceblue;
-  width: 36.92vw;
-  height: 11.45vw;
   display: flex;
   flex-direction: column;
   gap: 1.04vw;
   padding: 1.45vw;
+
+  @media (max-width: 480px) {
+    height: 40vw;
+    width: 100%;
+    border-radius: 2vw;
+    padding: 3vw;
+    gap: 3vw;
+  }
 `
 
 export const WeatherInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  gap: 0px;
 `
 
 export const IconWeatherContainer = styled.div`
@@ -123,6 +189,12 @@ export const IconWeatherContainer = styled.div`
   height: 3.85vw;
   display: flex;
   gap: 8.75vw;
+
+  @media (max-width: 480px) {
+    width: 50vw;
+    height: 15vw;
+    gap: 3vw;
+  }
 `
 
 export const IconBox = styled.div`
@@ -136,9 +208,17 @@ export const Temperatur = styled.p`
   justify-content: start;
   gap: 1.56vw;
   font-size: 2.96vw;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `
 export const City = styled.p`
   font-size: 1.04vw;
+
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+  }
 `
 
 export const SaveDeleteButton = styled.button`
@@ -153,6 +233,17 @@ export const SaveDeleteButton = styled.button`
 
   :hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+    width: 30vw;
+    height: 10vw;
+    border-radius: 10vw;
+
+    :hover {
+      transform: none;
+    }
   }
 `
 export const SaveDeleteButtonBox = styled.div`
@@ -170,6 +261,14 @@ export const WeatherErrorWrapper = styled.div`
   background-color: rgba(47, 72, 111, 0.62);
   border-radius: 0.93vw;
   padding: 0.52vw;
+
+  @media (max-width: 480px) {
+    height: 40vw;
+    width: 100%;
+    border-radius: 2vw;
+    padding: 3vw;
+    gap: 3vw;
+  }
 `
 
 export const ErrorBox = styled.div`
@@ -178,6 +277,10 @@ export const ErrorBox = styled.div`
   gap: 0.52vw;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 480px) {
+  gap: 2vw;
+  }
 `
 
 export const ApiError = styled.h1`
@@ -185,12 +288,20 @@ export const ApiError = styled.h1`
   color: rgba(243, 94, 94, 1);
   font-family: "Inter";
   font-weight: normal;
+
+  @media (max-width: 480px) {
+  font-size: 1.2rem;
+  }
 `
 
 export const MessageError = styled.p`
   font-size: 0.93vw;
   color: aliceblue;
   font-family: "Inter";
+
+  @media (max-width: 480px) {
+  font-size: 0.7rem;
+  }
 `
 
 export const StyledNavLink = styled(NavLink)`
