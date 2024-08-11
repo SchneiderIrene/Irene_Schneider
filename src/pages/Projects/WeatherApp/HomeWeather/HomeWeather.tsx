@@ -28,6 +28,7 @@ import {
 } from "store/redux/weather/weatherSlice"
 import { ChangeEvent, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { useTranslation } from "react-i18next";
 
 function HomeWeather() {
   const navigate = useNavigate()
@@ -40,6 +41,8 @@ function HomeWeather() {
   const data = useAppSelector(weatherSliceSelectors.weather)
   const status = useAppSelector(weatherSliceSelectors.status)
   const error = useAppSelector(weatherSliceSelectors.error)
+
+  const {t} = useTranslation();
 
   const getWeather = () => {
     dispatch(weatherSliceActions.getWeather({ city }))
@@ -65,6 +68,8 @@ function HomeWeather() {
       dispatch(weatherSliceActions.deleteWeatherCardHome(weather.id))
     }
 
+    
+
     return (
       <WeatherBlock key={weather.id}>
         <WeatherInfo>
@@ -86,10 +91,10 @@ function HomeWeather() {
         </WeatherInfo>
         <SaveDeleteButtonBox>
           <SaveDeleteButton onClick={() => saveWeather(weather.id)}>
-            Save
+           {t("projects.weather.buttonSave")}
           </SaveDeleteButton>
           <SaveDeleteButton onClick={deleteWeatherCardHome}>
-            Delete
+          {t("projects.weather.buttonDelete")}
           </SaveDeleteButton>
         </SaveDeleteButtonBox>
       </WeatherBlock>
@@ -102,7 +107,7 @@ function HomeWeather() {
           onClick={()=>navigate("/projects")}
           disabled={status === "loading" || status === "error"}
         >
-          <SlActionUndo/><br/> Meine <br/> Projekte
+          <SlActionUndo/><br/> {t("projects.weather.bunttonProjects")} <br/> {t("projects.weather.bunttonProjects_br")}
         </ProjekteButton>
       <WeatherSearchWrapper>
         <WeatherInput
@@ -115,7 +120,7 @@ function HomeWeather() {
           onClick={getWeather}
           disabled={status === "loading" || status === "error"}
         >
-          Search
+          {t("projects.weather.buttonSearch")}
         </WeatherButton>
       </WeatherSearchWrapper>
       {status === "loading" && <Spiner />}
@@ -134,7 +139,7 @@ function HomeWeather() {
         onClick={() => navigate("/projects/weatherApp/weather")}
         disabled={status === "loading" || status === "error"}
       >
-        My weather
+        {t("projects.weather.buttonMyWeather")}
       </MyWeatherButton>
     </WeatherMainWrapper>
   )

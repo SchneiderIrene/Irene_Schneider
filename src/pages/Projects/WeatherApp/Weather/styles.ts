@@ -14,6 +14,13 @@ export const WeatherPagesWrapper = styled.div`
   border-radius: 0.625vw;
   background-image: url(${Background});
   background-size: 100%;
+
+  @media (max-width: 480px) {
+    height: auto;
+    min-height: 80vh;
+    background-size: cover;
+    padding: 25vw 5vw 15vw 5vw;
+  }
 `
 
 export const DeleteButtonWeather = styled.button`
@@ -28,6 +35,17 @@ export const DeleteButtonWeather = styled.button`
 
   :hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+    width: 30vw;
+    height: 10vw;
+    border-radius: 10vw;
+
+    :hover {
+      transform: none;
+    }
   }
 `
 
@@ -53,11 +71,28 @@ cursor: ${({ disabled }) => (disabled ? "auto" : "pointer")};
   ${({ disabled }) =>
     disabled ? "transform: scale(1.0)" : "transform: scale(1.1)"}
 }
+@media (max-width: 480px) {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    left: 1vw;
+    top: 1vw;
+
+    :hover {
+      transform: none;
+    }
+  }
 `
 
 export const StyledP = styled.p`
  color: rgba(255, 255, 255, 1);
  font-size: 2.04vw;
+
+ @media (max-width: 480px) {
+ font-size: 0.7rem;
+  }
 `
 export const SearchButton = styled.button`
   width: 36.45vw;
@@ -72,6 +107,16 @@ export const SearchButton = styled.button`
 
   :hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 10vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    :hover {
+      transform: none;
+    }
   }
 `
 
@@ -92,5 +137,15 @@ export const DeleteButtonAllCards = styled.button`
 
   :hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 10vw;
+    border-radius: 2vw;
+    font-size: 0.7rem;
+    :hover {
+      transform: none;
+    }
   }
 `

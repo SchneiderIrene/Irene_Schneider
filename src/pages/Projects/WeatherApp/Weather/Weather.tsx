@@ -24,13 +24,15 @@ import {
 } from "../HomeWeather/styles"
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { useEffect } from "react";
 import { SlActionUndo } from "react-icons/sl";
+import { useTranslation } from "react-i18next";
 
 function Weather() {
   const navigate = useNavigate()
   const saveWeather = useAppSelector(weatherSliceSelectors.savedWeather)
   const dispatch = useDispatch()
+
+  const {t} = useTranslation();
 
   const deleteAllCards = () => {
     dispatch(weatherSliceActions.deleteAllCards())
@@ -67,7 +69,7 @@ function Weather() {
           <DeleteButtonWeather
             onClick={() => deleteWeatherCardWeather(weather.id)}
           >
-            Delete
+            {t("projects.weather.buttonDelete")}
           </DeleteButtonWeather>
         </DeleteButtonWeatherBox>
       </WeatherBlock>
@@ -80,30 +82,30 @@ function Weather() {
           onClick={()=>navigate("/projects")}
           disabled={status === "loading" || status === "error"}
         >
-          <SlActionUndo/><br/> Meine <br/> Projekte
+          <SlActionUndo/><br/> {t("projects.weather.bunttonProjects")} <br/> {t("projects.weather.bunttonProjects_br")}
         </ProjekteButton>
       {weatherCard}
       {weatherCard.length > 0 && (
         <>
         <DeleteButtonAllCards onClick={deleteAllCards}>
-          Delete all cards
+        {t("projects.weather.buttonDeleteAll")}
         </DeleteButtonAllCards>
         <SearchButton
         onClick={() => navigate(-1)}
         disabled={status === "loading" || status === "error"}
       >
-        Search
+        {t("projects.weather.buttonSearch")}
       </SearchButton>
         </>
       )}
       {weatherCard.length === 0 && (
         <>
-        <StyledP>Ooops, you don't have saved weather ... </StyledP>
+        <StyledP> {t("projects.weather.ooops")}</StyledP>
               <SearchButton
         onClick={() => navigate(-1)}
         disabled={status === "loading" || status === "error"}
       >
-        Search
+         {t("projects.weather.buttonSearch")}
       </SearchButton>
         </>
       )
