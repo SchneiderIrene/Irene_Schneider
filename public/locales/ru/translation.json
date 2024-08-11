@@ -474,7 +474,14 @@
         }
       ]
     }
-  ]
+  ],
+  "projects": {
+    "cat": {
+      "buttonBack" : "Мои проекты",
+      "buttonCat" : "Получить факт о котах ",
+      "buttonDeleteAll" : "Удалить все факты"
+    }
+  }
 }
       
     

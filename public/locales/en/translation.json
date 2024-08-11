@@ -462,5 +462,12 @@
         }
       ]
     }
-  ]
+  ],
+  "projects": {
+    "cat": {
+      "buttonBack" : "My projects",
+      "buttonCat" : "Get cat fact",
+      "buttonDeleteAll" : "Delete all data"
+    }
+  }
 }
