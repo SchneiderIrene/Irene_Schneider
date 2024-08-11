@@ -468,5 +468,12 @@
         }
       ]
     }
-  ]
+  ],
+  "projects": {
+    "cat": {
+      "buttonBack" : "Meine Projekte",
+      "buttonCat" : "Katzenfakten erhalten",
+      "buttonDeleteAll" : "Alle Daten löschen"
+    }
+  }
 }
