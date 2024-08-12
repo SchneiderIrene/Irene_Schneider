@@ -81,7 +81,7 @@ filter: brightness(60%);
     height: 20vw;
 }
 `
-ImgWeather.defaultProps = { src: Weather }
+ImgWeather.defaultProps = { src: String(Weather) }
 
 export const ImgLeafGrow = styled.img`
 width: 7.3vw;
@@ -95,7 +95,7 @@ filter: brightness(60%);
     height: 20vw;
 }
 `
-ImgLeafGrow.defaultProps = { src: LeafGrow }
+ImgLeafGrow.defaultProps = { src: String(LeafGrow) }
 
 export const ImgCatFacts = styled.img`
 width: 7.3vw;
@@ -109,7 +109,7 @@ filter: brightness(60%);
     height: 20vw;
 }
 `
-ImgCatFacts.defaultProps = { src: CatFacts }
+ImgCatFacts.defaultProps = { src: String(CatFacts) }
 
 export const Description = styled.p`
 font-size: 0.83vw;

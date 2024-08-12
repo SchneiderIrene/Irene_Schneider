@@ -13,7 +13,7 @@ export const WeatherPagesWrapper = styled.div`
   gap: 1.04vw;
   position: relative;
   border-radius: 0.625vw;
-  background-image: url(${Background});
+  background-image: url(${String(Background)});
   background-size: cover;
 
   @media (max-width: 480px) {

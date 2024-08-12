@@ -10,4 +10,4 @@ export const RectangleComponent = styled.img`
   height: 80vw;
 `
 
-RectangleComponent.defaultProps = { src: Rectangle }
+RectangleComponent.defaultProps = { src: String(Rectangle) }

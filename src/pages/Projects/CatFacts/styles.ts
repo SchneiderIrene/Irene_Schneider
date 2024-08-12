@@ -8,7 +8,7 @@ export const CatFactsContainer = styled.div`
   gap: 1.04vw;
   padding: 2.6vw;
   flex: 1;
-  background-image: url(${CatFactsBackground});
+  background-image: url(${String(CatFactsBackground)});
   background-size: cover;
   background-position: center;
 

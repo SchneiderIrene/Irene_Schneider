@@ -92,7 +92,7 @@ width: 52vw;
    
 }
 `
-FotoArticle.defaultProps = { src: Foto }
+FotoArticle.defaultProps = { src: String(Foto) }
 
 export const ContainerEclipse = styled.div`
 position: relative;
@@ -115,7 +115,7 @@ transform: scaleX(-1);
     height: 80vw;
 }
 `
-ElipceComponent.defaultProps = { src: Elipce }
+ElipceComponent.defaultProps = { src: String(Elipce) }
 
 
 export const ServiseSection = styled.section`

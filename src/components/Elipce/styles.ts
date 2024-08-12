@@ -23,4 +23,4 @@ export const ElipceComponent = styled.img`
   width: 100%;
   height: 40vh;
   `
-  ElipceComponent.defaultProps = { src: Elipce }
+  ElipceComponent.defaultProps = { src: String(Elipce) }

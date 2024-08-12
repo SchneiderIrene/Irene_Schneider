@@ -14,7 +14,7 @@ export const WeatherMainWrapper = styled.div`
   min-height: 80vh;
   height: auto;
   border-radius: 0.625vw;
-  background-image: url(${Background});
+  background-image: url(${String(Background)});
   background-size: cover;
 
   @media (max-width: 480px) {

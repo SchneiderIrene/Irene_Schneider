@@ -45,18 +45,18 @@ function Certificates() {
       <CardContainer>
             <Card
           style={{ backgroundImage: `url(${Diplom})` }}
-          onClick={()=>handleOpenModal(Diplom)}/>
+          onClick={()=>handleOpenModal(String(Diplom))}/>
         <Card
           style={{ backgroundImage: `url(${AITCertificate})` }}
-          onClick={()=>handleOpenModal(AITCertificate, true)}
+          onClick={()=>handleOpenModal(String(AITCertificate), true)}
         />
         <Card
           style={{ backgroundImage: `url(${B1})` }}
-          onClick={()=>handleOpenModal(B1)}
+          onClick={()=>handleOpenModal(String(B1))}
         />
         <Card
           style={{ backgroundImage: `url(${CrashKurs})` }}
-          onClick={()=>handleOpenModal(CrashKurs)}
+          onClick={()=>handleOpenModal(String(CrashKurs))}
         />
         <Card
           style={{ backgroundImage: `url(${Udemy})` }}
@@ -66,10 +66,10 @@ function Certificates() {
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} rotate={rotate} backgroundImage={background}/>
       <Modal isOpen={isModalOpenWithChildren} onClose={handleCloseModalWithChildren} rotate={rotate} backgroundImage={background}>
         <ModalContainer>
-            <Img src={Java1}/>
-            <Img src={Udemy}/>
-            <Img src={Spring}/>
-            <Img src={SQL}/>
+            <Img src={String(Java1)}/>
+            <Img src={String(Udemy)}/>
+            <Img src={String(Spring)}/>
+            <Img src={String(SQL)}/>
         </ModalContainer>
       </Modal>
       
