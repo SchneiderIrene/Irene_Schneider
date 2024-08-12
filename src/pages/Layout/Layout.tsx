@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { FaWhatsapp } from "react-icons/fa"
+//import { FaWhatsapp } from "react-icons/fa"
 import {
   LayoutComponent,
   Header,

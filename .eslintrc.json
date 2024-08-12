@@ -11,22 +11,10 @@
   "root": true,
   "ignorePatterns": ["dist"],
   "rules": {
-    "@typescript-eslint/consistent-type-imports": [
-      2,
-      { "fixStyle": "separate-type-imports" }
-    ],
-    "@typescript-eslint/no-restricted-imports": [
-      2,
-      {
-        "paths": [
-          {
-            "name": "react-redux",
-            "importNames": ["useSelector", "useStore", "useDispatch"],
-            "message": "Please use pre-typed versions from `src/app/hooks.ts` instead."
-          }
-        ]
-      }
-    ]
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/no-restricted-imports": "off",
+      "no-restricted-globals": "off",
+      "@typescript-eslint/no-unused-expressions": "off"
   },
   "overrides": [
     { "files": ["*.{c,m,}{t,j}s", "*.{t,j}sx"] },

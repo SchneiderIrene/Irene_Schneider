@@ -9,7 +9,7 @@ function LanguageSwitcher() {
 
     useEffect(()=>{
         setActiv(i18n.language)
-    }, [])
+    }, [i18n.language])
 
     const handleChangeLanguage = (language : string) =>{
         setActiv(language)

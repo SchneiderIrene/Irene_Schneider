@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import ReactTooltip from 'react-tooltip';
+
 
 export const JobCardWrapper = styled.div`
 position: relative;

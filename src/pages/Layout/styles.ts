@@ -4,7 +4,6 @@ import {
   City,
   Download,
   Linkedin,
-  Logo,
   Mail,
   Phone,
   World,

@@ -36,7 +36,7 @@ export const weatherSlice = createAppSlice({
             state.error = undefined
         },
         fulfilled: (state: WeatherSliceState, action: any)=>{
-            state.status = 'success',
+            state.status = 'success';
             state.data = [
                 ...state.data,
                 {

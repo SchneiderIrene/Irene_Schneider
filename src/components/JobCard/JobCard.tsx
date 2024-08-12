@@ -1,6 +1,6 @@
 import { GoDotFill } from "react-icons/go";
-import { useEffect, useState } from "react";
-import { VscDebugStepBack } from "react-icons/vsc";
+import { useState } from "react";
+//import { VscDebugStepBack } from "react-icons/vsc";
 import {
   ButtonControl,
   ButtonStart,
@@ -20,7 +20,6 @@ import {
 import { JobDescription, JobProps } from "./types"
 import { Skip } from "assets"
 import { useTranslation } from "react-i18next";
-import i18n from "i18n";
 
 function JobCard({ jobs }: JobProps) {
   const [index, setIndex] = useState(0)
