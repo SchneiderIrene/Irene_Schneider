@@ -14,6 +14,7 @@ export const CatFactsContainer = styled.div`
 
   @media (max-width: 480px) {
     gap: 5vw;
+    min-height: 50vh;
   }
 `
 interface ButtonStylesProps {
