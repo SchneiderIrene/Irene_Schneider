@@ -1,21 +1,9 @@
 {
     "rewrites": [
-      {
-        "source": "/projects/catfacts",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/projects/weatherapp",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/projects/weatherapp/homeweather",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/",
-        "destination": "/index.html"
-      }
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+          }
     ]
   }
   
