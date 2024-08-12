@@ -53,13 +53,13 @@ function Weather() {
             <Temperatur>{tempCelc()}</Temperatur>
             <IconBox>
               <IconWeather
-                src={`https://openweathermap.org/img/w/${weather.icon}.png`}
+                src={`http://openweathermap.org/img/w/${weather.icon}.png`}
               />
               <IconWeather
-                src={`https://openweathermap.org/img/w/${weather.icon}.png`}
+                src={`http://openweathermap.org/img/w/${weather.icon}.png`}
               />
               <IconWeather
-                src={`https://openweathermap.org/img/w/${weather.icon}.png`}
+                src={`http://openweathermap.org/img/w/${weather.icon}.png`}
               />
             </IconBox>
           </IconWeatherContainer>

@@ -55,7 +55,7 @@ export const LogoComponent = styled.img`
 }
 `
 
-LogoComponent.defaultProps = { src: Logo }
+// LogoComponent.defaultProps = { src: Logo }
 
 export const IconMenuContainer = styled.div`
 display: none;

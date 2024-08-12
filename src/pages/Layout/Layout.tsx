@@ -33,6 +33,7 @@ import { useTranslation } from "react-i18next"
 import { IoMenu } from "react-icons/io5"
 import ModalMenu from "components/ModalMenu/ModalMenu"
 import { useState } from "react"
+import { Logo } from "assets";
 
 function Layout({ children }: LayotProps) {
   const navigate = useNavigate()
@@ -51,7 +52,7 @@ function Layout({ children }: LayotProps) {
     <LayoutComponent>
       <Header>
         <LogoContainer onClick={() => navigate("/")}>
-          <LogoComponent />
+          <LogoComponent src={Logo}/>
         </LogoContainer>
         <IconMenuContainer onClick={handleOpenModal}>
           <IoMenu color="#fcf1e4" fontSize={"10vw"} />
