@@ -7,18 +7,16 @@ export const WeatherPagesWrapper = styled.div`
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  height: 26.04vw;
+  min-height: 80vh;
+  height: auto;
   padding: 2.6vw;
   gap: 1.04vw;
   position: relative;
   border-radius: 0.625vw;
   background-image: url(${Background});
-  background-size: 100%;
+  background-size: cover;
 
   @media (max-width: 480px) {
-    height: auto;
-    min-height: 80vh;
-    background-size: cover;
     padding: 25vw 5vw 15vw 5vw;
   }
 `
@@ -89,6 +87,7 @@ cursor: ${({ disabled }) => (disabled ? "auto" : "pointer")};
 export const StyledP = styled.p`
  color: rgba(255, 255, 255, 1);
  font-size: 2.04vw;
+ margin-top: 5vw;
 
  @media (max-width: 480px) {
  font-size: 0.7rem;
