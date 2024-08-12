@@ -1,15 +1,22 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "public/**/*",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
+        "source": "/projects/catfacts",
+        "destination": "/index.html"
+      },
       {
-        "src": "/(.*)",
-        "dest": "/$1"
+        "source": "/projects/weatherapp",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/projects/weatherapp/homeweather",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/",
+        "destination": "/index.html"
       }
     ]
   }
+  
+  
