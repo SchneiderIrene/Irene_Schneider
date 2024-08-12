@@ -11,15 +11,13 @@ export const WeatherMainWrapper = styled.div`
   justify-content: space-between;
   padding: 2.6vw;
   gap: 1.04vw;
-  height: 26vw;
+  min-height: 80vh;
+  height: auto;
   border-radius: 0.625vw;
   background-image: url(${Background});
-  background-size: 100%;
+  background-size: cover;
 
   @media (max-width: 480px) {
-    min-height: 80vh;
-    height: auto;
-    background-size: cover;
     padding: 25vw 5vw 15vw 5vw;
     gap: 5vw;
   }
