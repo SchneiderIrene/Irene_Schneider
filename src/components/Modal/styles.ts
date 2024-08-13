@@ -26,5 +26,10 @@ export const ModalContent = styled.div<ModalProps>`
   border: 0.15vw solid rgba(128, 0, 128, 0.6);
   background-size: 100%;
   overflow: hidden;
+
+  @media (max-width: 480px){
+    width: ${({rotate})=> rotate ? "100vw" : "80vw"};
+    height: ${({rotate})=> rotate ? "80vw" : "100vw"};
+  }
   
 `

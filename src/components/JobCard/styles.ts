@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import { GoDotFill } from "react-icons/go";
 import ReactTooltip from 'react-tooltip';
 
 export const JobCardWrapper = styled.div`
@@ -7,6 +8,8 @@ gap: 1vw;
 display: flex;
 flex-direction: column;
 flex: 1;
+
+
 `
 
 export const CardComponent = styled.div`
@@ -20,6 +23,8 @@ export const CardComponent = styled.div`
   gap: 1.66vw;
   padding: 3vw;
   line-height: 1.9em;
+
+  
 `
 
 export const TitleH2Card = styled.h2`
@@ -28,6 +33,10 @@ export const TitleH2Card = styled.h2`
   color: #fcf1e4;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 1rem;
+  }
 `
 export const TitleH3Card = styled.h2`
   font-size: 1.3vw;
@@ -35,6 +44,10 @@ export const TitleH3Card = styled.h2`
   color: #fcf1e4;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 0.9rem;
+  }
 `
 
 export const TitleH4Card = styled.h2`
@@ -42,6 +55,10 @@ export const TitleH4Card = styled.h2`
   color: rgba(252, 241, 228, 0.9);
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 0.8rem;
+  }
 `
 
 export const TitleDesc = styled.h2`
@@ -49,6 +66,10 @@ export const TitleDesc = styled.h2`
   color: rgba(252, 241, 228, 0.9);
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 0.7rem;
+  }
 `
 export const DescriptionExperience = styled.p`
   font-size: 1.1vw;
@@ -56,6 +77,10 @@ export const DescriptionExperience = styled.p`
   line-height: 2;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 0.7rem;
+  }
 `
 export const StyledLi = styled.li``
 
@@ -64,6 +89,12 @@ export const StyledA = styled.a`
   display: inline-block;
  :hover {
        transform: scale(1.1);
+  }
+
+  @media (max-width: 480px){
+    :hover {
+       transform: none;
+  }
   }
 `
 
@@ -93,6 +124,13 @@ top: ${({position})=> position ? "-4vw" : "none"};
 bottom: ${({position})=> position ? "none" : "-4vw"};
 width: 100%;
 z-index: 9;
+
+
+@media (max-width: 480px) {
+    gap: 20vw;
+    top: ${({position})=> position ? "-15vw" : "none"};
+    bottom: ${({position})=> position ? "none" : "-15vw"};
+}
 `
 interface IconProps {
   disabled: boolean
@@ -113,6 +151,13 @@ transform: ${({scaleX})=>scaleX ? "scaleX(-1)" : "scaleX(1)"};
       }
      
   }
+
+  @media (max-width: 480px) {
+    width: 10vw;
+    height: 15vw;
+    display: flex;
+    gap: 30vw;
+}
 `
 
 export const ButtonStart = styled.div`
@@ -123,4 +168,21 @@ cursor: pointer;
   transform: scale(1.3);
 }
 
+@media (max-width: 480px) {
+    gap: 3vw;
+
+    :hover{
+  transform: none;
+}
+}
+
+`
+
+export const GoDotFillComponent = styled(GoDotFill)`
+font-size: 0.4vw;
+color: rgba(252, 241, 228, 0.9);
+
+@media (max-width: 480px) {
+  font-size: 0.7rem;
+}
 `

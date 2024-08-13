@@ -1,11 +1,12 @@
-import { GoDotFill } from "react-icons/go";
-import { useEffect, useState } from "react";
-import { VscDebugStepBack } from "react-icons/vsc";
+
+import { useState } from "react";
+//import { VscDebugStepBack } from "react-icons/vsc";
 import {
   ButtonControl,
   ButtonStart,
   CardComponent,
   DescriptionExperience,
+  GoDotFillComponent,
   IconBox,
   JobCardWrapper,
   Part,
@@ -20,7 +21,6 @@ import {
 import { JobDescription, JobProps } from "./types"
 import { Skip } from "assets"
 import { useTranslation } from "react-i18next";
-import i18n from "i18n";
 
 function JobCard({ jobs }: JobProps) {
   const [index, setIndex] = useState(0)
@@ -64,9 +64,9 @@ function JobCard({ jobs }: JobProps) {
         <ButtonStart 
         title="start" 
         onClick={handleReset}>
-          <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
-          <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
-          <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
+         <GoDotFillComponent />
+          <GoDotFillComponent />
+          <GoDotFillComponent />
           {/* <RiRestartLine color="rgba(252, 241, 228, 0.9)" fontSize={"1.5vw"}/> */}
         </ButtonStart>
 
@@ -116,9 +116,9 @@ function JobCard({ jobs }: JobProps) {
         <ButtonStart 
         title="zum Anfang" 
         onClick={handleReset}>
-          <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
-          <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
-          <GoDotFill color="rgba(252, 241, 228, 0.9)" fontSize={"0.4vw"} />
+          <GoDotFillComponent />
+          <GoDotFillComponent />
+          <GoDotFillComponent />
           {/* <RiRestartLine color="rgba(252, 241, 228, 0.9)" fontSize={"1.5vw"}/> */}
         </ButtonStart>
         <IconBox

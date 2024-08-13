@@ -7,6 +7,11 @@ export const ExperienceContainer = styled.div`
   width: 100%;
   position: relative;
   z-index: 33;
+
+  @media (max-width: 480px){
+    gap: 15vw;
+    margin-bottom: 15vw;
+  }
 `
 
 export const Title = styled.h1`
@@ -18,6 +23,10 @@ export const Title = styled.h1`
   color: #fcf1e4;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 1.2rem;
+  }
 `
 
 export const CardContainer = styled.div`

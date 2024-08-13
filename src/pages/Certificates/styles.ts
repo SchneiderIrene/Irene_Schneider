@@ -6,6 +6,11 @@ export const CertificateContainer = styled.div`
   gap: 5.2vw;
   flex: 1;
   position: relative;
+
+  @media (max-width: 480px){
+    gap: 15vw;
+    margin-bottom: 15vw;
+  }
 `
 export const Title = styled.h1`
   font-size: 3.75vw;
@@ -16,12 +21,24 @@ export const Title = styled.h1`
   color: #fcf1e4;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 1.2rem;
+  }
 `
 
 export const CardContainer = styled.div`
   display: flex;
   gap: 0.52vw;
   width: 70vw;
+
+  @media (max-width: 480px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10vw;
+  }
 `
 
 export const Card = styled.div`
@@ -40,6 +57,14 @@ export const Card = styled.div`
   :hover {
     transform: scale(1.06);
     filter: brightness(0.8);
+  }
+
+  @media (max-width: 480px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vw;
+    height: 90vw;
   }
 `
 

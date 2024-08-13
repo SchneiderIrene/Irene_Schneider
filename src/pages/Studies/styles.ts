@@ -7,6 +7,11 @@ export const StudiesContainer = styled.div`
   position: relative;
   z-index: 35;
   width: 100%;
+
+  @media (max-width: 480px){
+    gap: 15vw;
+    margin-bottom: 15vw;
+  }
 `
 
 export const Title = styled.h1`
@@ -18,6 +23,10 @@ export const Title = styled.h1`
   color: #fcf1e4;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 1.2rem;
+  }
 `
 
 export const Card = styled.div`
@@ -37,6 +46,10 @@ export const TitleStudium = styled.h2`
   color: #fcf1e4;
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 1rem;
+  }
 `
 
 export const Country = styled.h3`
@@ -44,20 +57,32 @@ export const Country = styled.h3`
   font-weight: bold;
   color: #fcf1e4;
   position: relative;
-  z-index: 3;`
+  z-index: 3;
+  @media (max-width: 480px){
+    font-size: 0.9rem;
+  }
+  `
 
 
 export const Period = styled.h3`
   font-size: 1.04vw;
   color: rgba(252, 241, 228, 0.9);
   position: relative;
-  z-index: 3;`
+  z-index: 3;
+  @media (max-width: 480px){
+    font-size: 0.8rem;
+  }
+  `
 
 export const DescriptionStudies = styled.p`
   font-size: 1.04vw;
   color: rgba(252, 241, 228, 0.9);
   position: relative;
   z-index: 3;
+
+  @media (max-width: 480px){
+    font-size: 0.7rem;
+  }
 `
 export const StyledAStudies = styled.a`
   color: #fcf1e4;
