@@ -17,6 +17,7 @@ export const LayoutComponent = styled.div`
   flex-direction: column;
   flex: 1;
   background-color: #1e1e1e;
+  overflow: hidden;
   
 `
 
