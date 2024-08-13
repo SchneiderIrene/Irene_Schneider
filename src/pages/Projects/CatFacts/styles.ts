@@ -11,6 +11,7 @@ export const CatFactsContainer = styled.div`
   background-image: url(${CatFactsBackground});
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 
   @media (max-width: 480px) {
     gap: 5vw;

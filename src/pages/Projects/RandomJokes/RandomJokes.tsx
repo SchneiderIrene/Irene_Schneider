@@ -27,7 +27,7 @@ function RandomJokes() {
   const jokes = data.map(joke => {
     return (
       <JokeText key={joke.id}>
-        {joke.question}: {joke.answer}
+        {joke.question} : {joke.answer}
       </JokeText>
     )
   })
