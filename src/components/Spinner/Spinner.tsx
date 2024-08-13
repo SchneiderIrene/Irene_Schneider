@@ -1,6 +1,6 @@
 import {SpinnerComponent, SpinnerContainer} from './styles'
 
-function Spiner(){
+function Spinner(){
     return (
         <SpinnerContainer>
             <SpinnerComponent/>
@@ -9,4 +9,4 @@ function Spiner(){
     )
 }
 
-export default Spiner;
+export default Spinner;

@@ -477,10 +477,12 @@
     "title2" : "LeafGrow",
     "discription3" : "Ein Mini-Projekt, bei dem der Benutzer auf Anfrage eine interessante Tatsache über Katzen vom Server erhält. Der Frontend-Teil, entwickelt in TypeScript und React, verwendet Redux für das Zustandsmanagement. Die Anwendung integriert ein Backend, um Katzenfakten abzurufen, und bietet eine automatische Übersetzung in Deutsch, Englisch oder Russisch, basierend auf der vom Benutzer gewählten Sprache.",
     "title3" : "Fakten über Katzen",
+    "discription4" : "Ein Mini-Projekt, bei dem der Benutzer auf Anfrage einen zufälligen Witz vom Server erhält. Der Frontend-Teil, entwickelt in TypeScript und React, verwendet Redux für das Zustandsmanagement. Die Anwendung integriert ein Backend, um Witze abzurufen, und bietet eine automatische Übersetzung in Deutsch, Englisch oder Russisch, basierend auf der vom Benutzer gewählten Sprache.",
+    "title4" : "Zufällige Witze",
     "cat": {
       "buttonBack" : "Meine Projekte",
-      "buttonCat" : "Katzenfakten erhalten",
-      "buttonDeleteAll" : "Alle Daten löschen"
+      "buttonCat" : "Der Katzenfakt",
+      "buttonDeleteAll" : "Alles löschen"
     },
     "weather" : {
       "buttonSave" : "Speichern",
@@ -491,6 +493,12 @@
       "buttonSearch": "Suchen",
       "buttonMyWeather" : "Mein Wetter",
       "ooops" : "Hoppla, Sie haben das Wetter nicht gespeichert ..."
+    },
+    "randomJokes" : {
+      "buttonGet" : "Der zufällige Witz",
+      "buttonDeleteAll" : "Alles löschen",
+      "bunttonProjects" : "Meine",
+      "bunttonProjects_br" : "Projekte"
     }
   }
 }

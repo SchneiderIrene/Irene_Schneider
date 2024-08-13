@@ -25,5 +25,8 @@ export {default as Java1} from './Java1.jpg'
 export {default as Spring} from './Spring.jpg'
 export {default as SQL} from './SQL.jpg'
 export {default as Skip} from './next-arrows-svgrepo-com.svg'
+export {default as Joke} from './joke.jpg'
+export {default as JokeTransporant} from './joke-transporant.png'
+export {default as Insult} from './insult.jpg'
 
 

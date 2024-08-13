@@ -4,6 +4,7 @@ import Home from "pages/Home/Home"
 import Layout from "pages/Layout/Layout"
 import CatFacts from "pages/Projects/CatFacts/CatFacts";
 import Projects from "pages/Projects/Projects"
+import RandomJokes from "pages/Projects/RandomJokes/RandomJokes";
 import HomeWeather from "pages/Projects/WeatherApp/HomeWeather/HomeWeather"
 import Weather from "pages/Projects/WeatherApp/Weather/Weather"
 import Studies from "pages/Studies/Studies"
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/projects/weatherApp/home" element={<HomeWeather />} />
           <Route path="/projects/weatherApp/weather" element={<Weather />} />
           <Route path="/projects/catfacts/catfacts" element={<CatFacts />} />
+          <Route path="/projects/randomJokes/randomJokes" element={<RandomJokes />} />
           <Route path="*" element="Page not found" />
         </Routes>
       </Layout>

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { CatFacts, LeafGrow, Weather } from "assets";
+import { CatFacts, Joke, LeafGrow, Weather } from "assets";
 import { NavLink } from "react-router-dom";
 
 export const ProjectsWrapper = styled.div`
@@ -25,7 +25,21 @@ z-index: 3;
 }
 `
 
-export const CardContainer = styled.div`
+export const CardContainerAll = styled.div`
+display: flex;
+width: 100%;
+flex-direction: column;
+justify-content: space-between;
+gap: 5vw;
+
+@media (max-width : 480px) {
+  /* flex-direction: column;
+  align-items: center; */
+  gap: 10vw;
+}
+`
+
+export const CardContainer3Card = styled.div`
 display: flex;
 width: 100%;
 justify-content: space-between;
@@ -111,6 +125,22 @@ filter: brightness(60%);
 `
 ImgCatFacts.defaultProps = { src: CatFacts }
 
+export const ImgJoke = styled.img`
+width: 7.3vw;
+height: 7.3vw;
+position: absolute;
+top: -2.86vw;
+filter: brightness(60%);
+border-radius: 50%;
+
+@media (max-width : 480px) {
+    width: 20vw;
+    height: 20vw;
+}
+`
+ImgJoke.defaultProps = { src: Joke }
+
+
 export const Description = styled.p`
 font-size: 0.83vw;
 color: rgba(252, 241, 228, 0.6);
@@ -119,6 +149,7 @@ color: rgba(252, 241, 228, 0.6);
   font-size: 0.7rem;
 }
 `
+
 export const TitleCard = styled.h3`
 color: #FCF1E4;
 font-size: 1.45vw;
