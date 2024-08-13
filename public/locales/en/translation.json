@@ -469,7 +469,7 @@
     "title1": "Weather App",
     "discription2": "LeafGrow is a project for managing cannabis cultivation. The frontend part of the application was developed using TypeScript with React and Redux, allowing seamless integration with the backend and database. It provides a user-friendly, responsive interface that works optimally across different devices. LeafGrow helps users control and manage all aspects of cannabis cultivation.",
     "title2": "LeafGrow",
-    "discription3": "A mini-project where the user receives an interesting cat fact from the server upon request. The frontend, developed in TypeScript and React, uses Redux for state management. The application integrates with a backend to retrieve cat facts and offers automatic translation into German, English, or Russian, based on the user's selected language.",
+    "discription3": "A mini-project where the user receives an interesting cat fact from the server upon request. The frontend, developed in TypeScript and React. The application integrates with a backend to retrieve cat facts and offers automatic translation into German, English, or Russian, based on the user's selected language.",
     "title3": "Cat Facts",
     "discription4": "A mini-project where the user receives a random joke from the server upon request. The frontend, developed in TypeScript and React, uses Redux for state management. The application integrates a backend to retrieve jokes and provides automatic translation into German, English, or Russian, based on the language selected by the user.",
     "title4": "Random Jokes",
