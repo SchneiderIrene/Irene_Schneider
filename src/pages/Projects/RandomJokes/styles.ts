@@ -15,7 +15,7 @@ export const RandomJokesContainer = styled.div`
 
   @media (max-width: 480px) {
     gap: 5vw;
-    min-height: 50vh;
+    min-height: 100vh;
   }
 `
 interface JokeCardPropsStyled {
