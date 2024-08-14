@@ -11,7 +11,6 @@ export const RandomJokesContainer = styled.div`
   background-size: cover;
   background-position: center;
   flex: 1;
-  overflow: hidden;
 
   @media (max-width: 480px) {
     gap: 5vw;

@@ -4,7 +4,6 @@ import {
   City,
   Download,
   Linkedin,
-  Logo,
   Mail,
   Phone,
   World,
@@ -18,6 +17,7 @@ export const LayoutComponent = styled.div`
   flex: 1;
   background-color: #1e1e1e;
   overflow: hidden;
+  min-height: 100vh;
 `
 
 export const Header = styled.header`
