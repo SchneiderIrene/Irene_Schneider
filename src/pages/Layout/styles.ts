@@ -124,7 +124,7 @@ export const StyledNavLink = styled(NavLink)`
 export const Main = styled.main`
   width: 100%;
   min-width: 59vw;
-  min-height: 100vh;
+  height: 100vh;
   padding: 3vw 15vw;
   display: flex;
   
