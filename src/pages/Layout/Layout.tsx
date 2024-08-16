@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { FaWhatsapp } from "react-icons/fa"
 import {
   LayoutComponent,
@@ -32,7 +32,7 @@ import LanguageSwitcher from "components/LanguageSwitcher/LanguageSwitcher"
 import { useTranslation } from "react-i18next"
 import { IoMenu } from "react-icons/io5"
 import ModalMenu from "components/ModalMenu/ModalMenu"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Logo } from "assets";
 
 function Layout({ children }: LayotProps) {
@@ -47,6 +47,14 @@ function Layout({ children }: LayotProps) {
   }
 
   const handleCloseModal = () => setIsModalOpen(false)
+  
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Плавная анимация
+    });
+  }, [location.pathname]);
 
   return (
     <LayoutComponent>
