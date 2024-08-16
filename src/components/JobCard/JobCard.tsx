@@ -8,7 +8,6 @@ import {
   GoDotFillComponent,
   IconBox,
   JobCardWrapper,
-  Part,
   StyledA,
   StyledLi,
   StyledSpan,
@@ -21,6 +20,8 @@ import { JobDescription, JobProps } from "./types"
 import { Skip } from "assets"
 import { useTranslation } from "react-i18next"
 import Tooltip from "@mui/material/Tooltip"
+import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material"
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 
 function JobCard({ jobs }: JobProps) {
   const [index, setIndex] = useState(0)
@@ -94,20 +95,39 @@ function JobCard({ jobs }: JobProps) {
         <TitleH4Card>{t(`jobs.${index}.responsibilities`)}</TitleH4Card>
         <DescriptionExperience>
           {descriptions.map((desc, i) => (
-            <Part key={i}>
-              {desc.titleDescription && (
-                <TitleDesc>{t(desc.titleDescription)}</TitleDesc>
-              )}
-              {desc.li &&
-                desc.li.map((liItem, k) => (
-                  <StyledLi key={k}>
-                    {desc.span && desc.span[k] && (
-                      <StyledSpan>{desc.span[k]} &nbsp;</StyledSpan>
-                    )}
-                    {liItem}
-                  </StyledLi>
-                ))}
-            </Part>
+            <Accordion 
+            sx={{
+              backgroundColor: "transparent",
+              boxShadow: "none",
+              marginLeft : "-1vw"
+            }}
+            key={i}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon 
+                sx={{
+                  color: "rgba(252, 241, 228, 0.9)",
+                  fontSize: "2rem",
+                 
+                }}/>}
+                aria-controls={`panel${i}-content`}
+                id={`panel${i}-header`}
+              >
+                {desc.titleDescription && (
+                  <TitleDesc>{t(desc.titleDescription)}</TitleDesc>
+                )}
+              </AccordionSummary>
+              <AccordionDetails>
+                {desc.li &&
+                  desc.li.map((liItem, k) => (
+                    <StyledLi key={k}>
+                      {desc.span && desc.span[k] && (
+                        <StyledSpan>{desc.span[k]} &nbsp;</StyledSpan>
+                      )}
+                      {liItem}
+                    </StyledLi>
+                  ))}
+              </AccordionDetails>
+            </Accordion>
           ))}
         </DescriptionExperience>
       </CardComponent>

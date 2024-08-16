@@ -6,7 +6,7 @@ import { Elipce } from "assets";
 export const ContainerEclipse = styled.div`
   position: absolute;
   right:-14vw;
-  bottom: -15vw;
+  bottom: -30vw;
   z-index: 1;
   width: 50vw;
   height: 50vw;
@@ -21,6 +21,10 @@ export const ContainerEclipse = styled.div`
 
 export const ElipceComponent = styled.img`
   width: 100%;
-  height: 40vh;
+  height: 100vh;
+
+  @media (max-width: 480px){
+    height: 50vh;
+}
   `
   ElipceComponent.defaultProps = { src: Elipce }

@@ -23,8 +23,6 @@ export const CardComponent = styled.div`
   gap: 1.66vw;
   padding: 3vw;
   line-height: 1.9em;
-
-  
 `
 
 export const TitleH2Card = styled.h2`
@@ -82,7 +80,9 @@ export const DescriptionExperience = styled.p`
     font-size: 0.7rem;
   }
 `
-export const StyledLi = styled.li``
+export const StyledLi = styled.li`
+ color: rgba(252, 241, 228, 0.8);
+`
 
 export const StyledA = styled.a`
   color: #fcf1e4;

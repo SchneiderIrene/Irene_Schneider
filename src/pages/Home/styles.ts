@@ -66,6 +66,7 @@ export const TextHeroSection = styled.p`
 font-size: 1vw;
 color: #FCF1E4;
 line-height: 1.5;
+text-align: justify;
 
 @media (max-width: 480px){
     font-size: 0.7rem;
@@ -156,7 +157,7 @@ z-index: 4;
 
 @media (max-width: 480px){
     font-size: 0.7rem;
-    text-align: left;
+    text-align: justify;
     line-height: 1.5;
 }
 `
