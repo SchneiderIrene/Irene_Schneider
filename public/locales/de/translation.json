@@ -500,5 +500,10 @@
       "bunttonProjects" : "Meine",
       "bunttonProjects_br" : "Projekte"
     }
+  },
+  "tooltips" : {
+    "tooltipStart" : "zum Anfang",
+    "tooltipNext" : "weiter",
+    "tooltipBack" : "vorher"
   }
 }

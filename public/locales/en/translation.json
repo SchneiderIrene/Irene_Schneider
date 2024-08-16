@@ -494,5 +494,10 @@
       "bunttonProjects": "My",
       "bunttonProjects_br": "Projects"
     }
+  },
+  "tooltips" : {
+    "tooltipStart" : "start",
+    "tooltipNext" : "next",
+    "tooltipBack" : "back"
   }
 }

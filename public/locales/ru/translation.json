@@ -506,6 +506,11 @@
       "bunttonProjects" : "Мои",
       "bunttonProjects_br" : "Проекты"
     }
+  },
+  "tooltips" : {
+    "tooltipStart" : "в начало",
+    "tooltipNext" : "далее",
+    "tooltipBack" : "назад"
   }
 }
       
