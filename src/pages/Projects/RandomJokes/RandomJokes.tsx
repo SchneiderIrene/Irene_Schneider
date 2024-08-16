@@ -38,9 +38,8 @@ function RandomJokes() {
         {" "}
         <SlActionUndo /> {t("projects.cat.buttonBack")}
       </ButtonJoke>
-      {status === "loading" ? <Spinner/> : 
+      {status === "loading" && <Spinner/>} 
         <JokeCard isShowBlock={!!jokes.length}>{jokes}</JokeCard>
-      }
       <ButtonJoke onClick={getJoke} disabled={status === "loading"}>
         {t("projects.randomJokes.buttonGet")}
       </ButtonJoke>

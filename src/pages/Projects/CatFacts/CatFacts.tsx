@@ -100,14 +100,12 @@ function CatFacts() {
         {" "}
         <SlActionUndo /> {t("projects.cat.buttonBack")}
       </ButtonCat>
-      
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <ResultContainer isShowBlock={!!catFacts.length}>
-          {catFactsElement}
-        </ResultContainer>
-      )}
+
+      {isLoading && <Spinner />}
+      <ResultContainer isShowBlock={!!catFacts.length}>
+        {catFactsElement}
+      </ResultContainer>
+
       <ButtonCat onClick={getCatFact}>{t("projects.cat.buttonCat")}</ButtonCat>
       <ButtonCat onClick={deleteCatFacts} disabled={!catFacts.length}>
         {t("projects.cat.buttonDeleteAll")}

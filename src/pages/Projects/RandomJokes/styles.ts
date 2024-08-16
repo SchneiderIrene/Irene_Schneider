@@ -9,7 +9,7 @@ export const RandomJokesContainer = styled.div`
   padding: 2.6vw;
   background-image: url(${Joke});
   background-size: cover;
-  background-position: center;
+  background-position: right;
   flex: 1;
 
   @media (max-width: 480px) {

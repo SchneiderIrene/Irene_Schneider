@@ -93,6 +93,7 @@ filter: brightness(60%);
 @media (max-width : 480px) {
     width: 20vw;
     height: 20vw;
+    top: -6vw;
 }
 `
 ImgWeather.defaultProps = { src: Weather }
@@ -107,6 +108,7 @@ filter: brightness(60%);
 @media (max-width : 480px) {
     width: 20vw;
     height: 20vw;
+    top: -6vw;
 }
 `
 ImgLeafGrow.defaultProps = { src: LeafGrow }
@@ -121,6 +123,7 @@ filter: brightness(60%);
 @media (max-width : 480px) {
     width: 20vw;
     height: 20vw;
+    top: -6vw;
 }
 `
 ImgCatFacts.defaultProps = { src: CatFacts }
@@ -136,6 +139,7 @@ border-radius: 50%;
 @media (max-width : 480px) {
     width: 20vw;
     height: 20vw;
+    top: -6vw;
 }
 `
 ImgJoke.defaultProps = { src: Joke }
