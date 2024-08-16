@@ -4,6 +4,7 @@ import { Elipce, Foto } from "assets";
 export const HomeContainer = styled.div`
 width: 100%;
 display: flex;
+flex: 1;
 flex-direction: column;
 gap: 6vw;
 
@@ -30,7 +31,7 @@ z-index: 6;
 
 @media (max-width: 480px){
   gap: 2vw;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: end;
 }
 
@@ -44,6 +45,20 @@ gap: 1vw;
 
 @media (max-width: 480px){
     width: 100%;
+    margin-top: 25vw;
+}
+`
+
+export const ButtonControl = styled.div`
+display: flex;
+flex-direction: column;
+gap: 1vw;
+
+@media (max-width: 480px){
+   width: 100%;
+   gap: 5vw;
+   margin-top: 5vw;
+ 
 }
 `
 
@@ -67,17 +82,7 @@ color: #FCF1E4;
     font-size: 1.2rem;
 }
 `
-export const ButtonControl = styled.div`
-display: flex;
-flex-direction: column;
-gap: 1vw;
 
-@media (max-width: 480px){
-   width: 100%;
-   gap: 2vw;
-   /* margin-bottom: -10vw; */
-}
-`
 export const FotoArticle = styled.img`
 position: absolute;
 top: 0;
@@ -86,9 +91,9 @@ z-index: 5;
 width: 52vw;
 
 @media (max-width: 480px){
-    top: -15vw;
-    left: 20vw;
-    width: 80vw;
+    top: -25vw;
+    left: 0vw;
+    width: 100vw;
    
 }
 `
