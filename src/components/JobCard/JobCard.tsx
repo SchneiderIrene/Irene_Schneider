@@ -96,10 +96,11 @@ function JobCard({ jobs }: JobProps) {
         <DescriptionExperience>
           {descriptions.map((desc, i) => (
             <Accordion 
+            disableGutters
             sx={{
               backgroundColor: "transparent",
               boxShadow: "none",
-              marginLeft : "-1vw"
+
             }}
             key={i}>
               <AccordionSummary
