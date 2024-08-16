@@ -50,10 +50,7 @@ function Layout({ children }: LayotProps) {
   
   const location = useLocation();
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth', // Плавная анимация
-    });
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (
