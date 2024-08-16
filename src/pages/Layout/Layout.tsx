@@ -50,7 +50,11 @@ function Layout({ children }: LayotProps) {
   
   const location = useLocation();
   useEffect(() => {
+    window.history.scrollRestoration = 'manual';
     window.scrollTo(0, 0);
+    return () => {
+      window.history.scrollRestoration = 'auto'; // Восстанавливаем стандартное поведение при демонтировании
+    };
   }, [location.pathname]);
 
   return (
