@@ -72,7 +72,7 @@ export const ButtonJoke = styled.button<ButtonStylesProps>`
   }
 
   @media (max-width: 480px) {
-    height: 10vw;
+    height: 15vw;
     font-size: 1rem;
 
     :hover {

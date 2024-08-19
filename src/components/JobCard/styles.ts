@@ -1,6 +1,5 @@
 import styled from "@emotion/styled"
 import { GoDotFill } from "react-icons/go";
-import ReactTooltip from 'react-tooltip';
 
 export const JobCardWrapper = styled.div`
 position: relative;
@@ -8,8 +7,6 @@ gap: 1vw;
 display: flex;
 flex-direction: column;
 flex: 1;
-
-
 `
 
 export const CardComponent = styled.div`
@@ -124,7 +121,6 @@ top: ${({position})=> position ? "-4vw" : "none"};
 bottom: ${({position})=> position ? "none" : "-4vw"};
 width: 100%;
 z-index: 9;
-
 
 @media (max-width: 480px) {
     gap: 20vw;
