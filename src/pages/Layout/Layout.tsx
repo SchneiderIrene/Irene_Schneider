@@ -159,7 +159,7 @@ function Layout({ children }: LayotProps) {
             <IconText>
               <AStyled
                 href={`/${urlCV()}`} //версия ссылки для деплоя, путь
-                download={`Irene_Schneider_${t("footer.CV")}_${language}`}
+                download={`Irene_Schneider_${t("footer.CV")}`}
               >
                 {t("footer.download")}
               </AStyled>
