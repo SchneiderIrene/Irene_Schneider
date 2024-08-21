@@ -33,11 +33,12 @@ import { useTranslation } from "react-i18next"
 import { IoMenu } from "react-icons/io5"
 import ModalMenu from "components/ModalMenu/ModalMenu"
 import { useEffect, useState } from "react"
-import { Logo } from "assets";
+import { Logo } from "assets"
+import i18n from "i18next";
 
 function Layout({ children }: LayotProps) {
   const navigate = useNavigate()
-
+  const location = useLocation()
   const { t } = useTranslation()
 
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -47,21 +48,33 @@ function Layout({ children }: LayotProps) {
   }
 
   const handleCloseModal = () => setIsModalOpen(false)
-  
-  const location = useLocation();
+
   useEffect(() => {
-    window.history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
+    window.history.scrollRestoration = "manual"
+    window.scrollTo(0, 0)
     return () => {
-      window.history.scrollRestoration = 'auto'; // Восстанавливаем стандартное поведение при демонтировании
-    };
-  }, [location.pathname]);
+      window.history.scrollRestoration = "auto" // Восстанавливаем стандартное поведение при демонтировании
+    }
+  }, [location.pathname])
+
+  const urlCV = () => {
+    switch (i18n.language) {
+      case 'de':
+        return 'public/Irene Schneider LL.pdf';
+      case 'en':
+        return 'public/Irene Schneider CV.pdf';
+      case 'ru':
+        return 'public/Ирена Шнайдер резюме.pdf';
+      default:
+        return 'public/Irene Schneider LL.pdf';
+    }
+  };
 
   return (
     <LayoutComponent>
       <Header>
         <LogoContainer onClick={() => navigate("/")}>
-          <LogoComponent src={Logo}/>
+          <LogoComponent src={Logo} />
         </LogoContainer>
         <IconMenuContainer onClick={handleOpenModal}>
           <IoMenu color="#fcf1e4" fontSize={"10vw"} />
@@ -143,8 +156,8 @@ function Layout({ children }: LayotProps) {
             <IconText>
               <AStyled
                 //href='../../../public/Irene Schneider LL.pdf'
-                href="/Irene Schneider LL.pdf"
-                download="Irene_Schneider_Lebenslauf"
+                href={urlCV()}
+                download={`Irene_Schneider_${t("footer.CV")}_${i18n.language}`}
               >
                 {t("footer.download")}
               </AStyled>
@@ -152,9 +165,9 @@ function Layout({ children }: LayotProps) {
           </IconContainerTransform>
         </ContactContainer>
         <ContactContainer>
-            <AStyled href="https://wa.me/491792118677" target="_blank">
-              <FaWhatsappComponent  />
-            </AStyled>
+          <AStyled href="https://wa.me/491792118677" target="_blank">
+            <FaWhatsappComponent />
+          </AStyled>
           <AStyled
             href="https://www.linkedin.com/in/irene-schneider-96853a274"
             target="_blank"
