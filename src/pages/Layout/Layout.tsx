@@ -60,13 +60,13 @@ function Layout({ children }: LayotProps) {
   const urlCV = () => {
     switch (i18n.language) {
       case 'de':
-        return 'public/Irene Schneider LL.pdf';
+        return 'Irene Schneider LL.pdf';
       case 'en':
-        return 'public/Irene Schneider CV.pdf';
+        return 'Irene Schneider CV.pdf';
       case 'ru':
-        return 'public/Ирена Шнайдер резюме.pdf';
+        return 'Ирена Шнайдер резюме.pdf';
       default:
-        return 'public/Irene Schneider LL.pdf';
+        return 'Irene Schneider LL.pdf';
     }
   };
 
@@ -155,8 +155,7 @@ function Layout({ children }: LayotProps) {
             <IconDownload />
             <IconText>
               <AStyled
-                //href='../../../public/Irene Schneider LL.pdf'
-                href={urlCV()}
+                href={`../../../public/${urlCV()}`} //версия ссылки для деплоя, полный путь
                 download={`Irene_Schneider_${t("footer.CV")}_${i18n.language}`}
               >
                 {t("footer.download")}
