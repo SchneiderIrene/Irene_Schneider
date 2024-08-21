@@ -69,7 +69,8 @@ function Layout({ children }: LayotProps) {
         return 'Irene Schneider LL.pdf';
     }
   };
-
+ console.log(i18n.language);
+ 
   return (
     <LayoutComponent>
       <Header>
@@ -156,7 +157,7 @@ function Layout({ children }: LayotProps) {
             <IconText>
               <AStyled
                 href={`/${urlCV()}`} //версия ссылки для деплоя, полный путь
-                download={`Irene_Schneider_${t("footer.CV")}_${i18n.language}`}
+                download={`Irene_Schneider_${t("footer.CV")}_${i18n.language}.pdf`}
               >
                 {t("footer.download")}
               </AStyled>
