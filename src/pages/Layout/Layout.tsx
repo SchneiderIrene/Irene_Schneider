@@ -70,6 +70,8 @@ function Layout({ children }: LayotProps) {
     }
   };
 
+  const language = i18n.language;
+
  
   return (
     <LayoutComponent>
@@ -157,7 +159,7 @@ function Layout({ children }: LayotProps) {
             <IconText>
               <AStyled
                 href={`/${urlCV()}`} //версия ссылки для деплоя, путь
-                download={`Irene_Schneider_${t("footer.CV")}_${i18n.language.toString()}_`}
+                download={`Irene_Schneider_${t("footer.CV")}_${language}`}
               >
                 {t("footer.download")}
               </AStyled>
