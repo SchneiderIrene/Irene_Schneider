@@ -155,7 +155,7 @@ function Layout({ children }: LayotProps) {
             <IconDownload />
             <IconText>
               <AStyled
-                href={`../../../public/${urlCV()}`} //версия ссылки для деплоя, полный путь
+                href={`/${urlCV()}`} //версия ссылки для деплоя, полный путь
                 download={`Irene_Schneider_${t("footer.CV")}_${i18n.language}`}
               >
                 {t("footer.download")}
