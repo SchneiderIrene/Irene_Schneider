@@ -1,4 +1,4 @@
-import { AITCertificate, B1, CrashKurs, Diplom,  Java1,  Spring, SQL, Udemy } from "assets"
+import { AITCertificate, B2, CrashKurs, Diplom,  Java1,  Spring, SQL, Udemy } from "assets"
 import {
   Card,
   CardContainer,
@@ -51,8 +51,8 @@ function Certificates() {
           onClick={()=>handleOpenModal(AITCertificate, true)}
         />
         <Card
-          style={{ backgroundImage: `url(${B1})` }}
-          onClick={()=>handleOpenModal(B1)}
+          style={{ backgroundImage: `url(${B2})` }}
+          onClick={()=>handleOpenModal(B2)}
         />
         <Card
           style={{ backgroundImage: `url(${CrashKurs})` }}
