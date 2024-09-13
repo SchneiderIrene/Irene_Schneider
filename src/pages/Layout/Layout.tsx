@@ -147,10 +147,10 @@ function Layout({ children }: LayotProps) {
             <IconMail />
             <IconText>
               <AStyled
-                href="mailto:schneider_irene@outlook.com"
+                href="mailto:irene.schneider.official@gmail.com"
                 target="_blank"
               >
-                schneider_irene@outlook.com
+                irene.schneider.official@gmail.com
               </AStyled>
             </IconText>
           </IconContainerTransform>
