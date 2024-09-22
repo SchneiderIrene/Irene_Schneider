@@ -36,7 +36,7 @@ function Home() {
   return (
     <>
     <Helmet>
-        <meta name="description" content={`${keySkills},React, Redux, Frontend, Backend, Fullstack, Website, Websete, App, Web, Development, Entwicklung, Java, JavaScript, TypeScript, Spring, HTML5, CSS, StyledComponents, Emotional, MaterialUI, Figma, UI/UX, Design, Media-Queries, Adaptiv, Spring Boot, MVC, Security, Data JPA, Maven, TomCat, DataBase, API, Node.js, REST API`} />
+        <meta name="description" content={`${keySkills},React, Redux, Frontend, Backend, Fullstack, Website, Websete, App, Web, Development, Entwicklung, Java, JavaScript, TypeScript, Spring, HTML5, CSS, StyledComponents, Emotional, MaterialUI, Figma, UI/UX, Design, Media-Queries, Adaptiv, Spring Boot, MVC, Security, Data JPA, Maven, TomCat, DataBase, API, Node.js, REST API, Frontend und Backend in der Webentwicklung`} />
         <meta name="keywords" content= {keySkills} />
       </Helmet>
    
