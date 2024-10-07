@@ -165,6 +165,7 @@ export const ContactContainer = styled.div`
   @media (max-width: 480px){
   flex-direction: column;
   align-items: start;
+  gap: 15vw
 }
 `
 
@@ -323,6 +324,6 @@ font-size: 1.7vw;
 
 @media (max-width: 480px){
     font-size: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 5vw;
 }
 `
