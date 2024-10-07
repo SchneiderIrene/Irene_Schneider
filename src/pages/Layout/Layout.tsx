@@ -26,6 +26,7 @@ import {
   NavContainerModalMenu,
   LanguageSwitcherBox,
   FaWhatsappComponent,
+  FaTelegramPlaneComponent,
 } from "./styles"
 import { LayotProps } from "./types"
 import LanguageSwitcher from "components/LanguageSwitcher/LanguageSwitcher"
@@ -35,6 +36,8 @@ import ModalMenu from "components/ModalMenu/ModalMenu"
 import { useEffect, useState } from "react"
 import { Logo } from "assets"
 import i18n from "i18next";
+
+
 
 function Layout({ children }: LayotProps) {
   const navigate = useNavigate()
@@ -181,6 +184,9 @@ function Layout({ children }: LayotProps) {
             target="_blank"
           >
             <IconXing />
+          </AStyled>
+          <AStyled href="https://t.me/Schneider_Irene" target="_blank">
+          <FaTelegramPlaneComponent  />
           </AStyled>
         </ContactContainer>
         <IconText>{t("footer.data")}</IconText>

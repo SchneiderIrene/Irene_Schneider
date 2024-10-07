@@ -10,6 +10,7 @@ import {
   Xing,
 } from "assets"
 import { FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa"
 
 export const LayoutComponent = styled.div`
   display: flex;
@@ -275,6 +276,8 @@ export const IconXing = styled.img`
 `
 IconXing.defaultProps = { src: Xing }
 
+
+
 export const IconText = styled.p`
   color: rgba(252, 241, 228, 0.6);
   font-size: 0.5vw;
@@ -309,7 +312,17 @@ font-size: 1.7vw;
     font-size: 5vw;
     margin-bottom: 5vw;
 }
+`
+export const FaTelegramPlaneComponent = styled(FaTelegramPlane)`
+color: rgba(252, 241, 228, 0.9);
+font-size: 1.7vw;
 
+:hover {
+    transform: scale(1.2);
+  }
 
-
+@media (max-width: 480px){
+    font-size: 5vw;
+    margin-bottom: 5vw;
+}
 `
